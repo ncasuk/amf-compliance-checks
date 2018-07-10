@@ -1,0 +1,92 @@
+checks:
+- check_id: check_downwelling_longwave_flux_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'downwelling_longwave_flux_in_air'
+  parameters: {pyessv_namespace: product_radiation_variable, var_id: downwelling_longwave_flux_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_downwelling_longwave_flux_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'downwelling_longwave_flux_in_air'
+  parameters: {dtype: float32, var_id: downwelling_longwave_flux_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_upwelling_longwave_flux_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'upwelling_longwave_flux_in_air'
+  parameters: {pyessv_namespace: product_radiation_variable, var_id: upwelling_longwave_flux_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_upwelling_longwave_flux_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'upwelling_longwave_flux_in_air'
+  parameters: {dtype: float32, var_id: upwelling_longwave_flux_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_downwelling_shortwave_flux_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'downwelling_shortwave_flux_in_air'
+  parameters: {pyessv_namespace: product_radiation_variable, var_id: downwelling_shortwave_flux_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_downwelling_shortwave_flux_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'downwelling_shortwave_flux_in_air'
+  parameters: {dtype: float32, var_id: downwelling_shortwave_flux_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_upwelling_shortwave_flux_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'upwelling_shortwave_flux_in_air'
+  parameters: {pyessv_namespace: product_radiation_variable, var_id: upwelling_shortwave_flux_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_upwelling_shortwave_flux_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'upwelling_shortwave_flux_in_air'
+  parameters: {dtype: float32, var_id: upwelling_shortwave_flux_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_upwelling_shortwave_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_upwelling_shortwave'
+  parameters: {pyessv_namespace: product_radiation_variable, var_id: qc_flag_upwelling_shortwave,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_upwelling_shortwave_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_upwelling_shortwave'
+  parameters: {dtype: byte, var_id: qc_flag_upwelling_shortwave, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_downwelling_shortwave_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_downwelling_shortwave'
+  parameters: {pyessv_namespace: product_radiation_variable, var_id: qc_flag_downwelling_shortwave,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_downwelling_shortwave_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_downwelling_shortwave'
+  parameters: {dtype: byte, var_id: qc_flag_downwelling_shortwave, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_upwelling_longwave_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_upwelling_longwave'
+  parameters: {pyessv_namespace: product_radiation_variable, var_id: qc_flag_upwelling_longwave,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_upwelling_longwave_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_upwelling_longwave'
+  parameters: {dtype: byte, var_id: qc_flag_upwelling_longwave, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_downwelling_longwave_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_downwelling_longwave'
+  parameters: {pyessv_namespace: product_radiation_variable, var_id: qc_flag_downwelling_longwave,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_downwelling_longwave_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_downwelling_longwave'
+  parameters: {dtype: byte, var_id: qc_flag_downwelling_longwave, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_body_temperature_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_body_temperature'
+  parameters: {pyessv_namespace: product_radiation_variable, var_id: qc_flag_body_temperature,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_body_temperature_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_body_temperature'
+  parameters: {dtype: byte, var_id: qc_flag_body_temperature, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_cleaning_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_cleaning'
+  parameters: {pyessv_namespace: product_radiation_variable, var_id: qc_flag_cleaning,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_cleaning_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_cleaning'
+  parameters: {dtype: byte, var_id: qc_flag_cleaning, vocabulary_ref: 'ncas:amf'}
+suite_name: product_radiation_variable_checks

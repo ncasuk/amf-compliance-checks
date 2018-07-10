@@ -1,0 +1,5 @@
+checks:
+- {__INCLUDE__: AMF_product_common_dimension_sea.yml}
+- {__INCLUDE__: AMF_product_common_variable_sea.yml}
+- {__INCLUDE__: AMF_product_liquid_water_content_variable.yml}
+suite_name: product_liquid_water_content_sea_checks

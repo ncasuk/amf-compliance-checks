@@ -1,0 +1,6 @@
+checks:
+- {__INCLUDE__: AMF_product_common_dimension_air.yml}
+- {__INCLUDE__: AMF_product_common_variable_air.yml}
+- {__INCLUDE__: AMF_product_size_concentration_spectra_dimension.yml}
+- {__INCLUDE__: AMF_product_size_concentration_spectra_variable.yml}
+suite_name: product_size_concentration_spectra_air_checks

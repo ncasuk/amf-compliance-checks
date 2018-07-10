@@ -1,0 +1,7 @@
+checks:
+- check_id: check_index_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'index'
+  parameters: {dim_id: index, pyessv_namespace: product_aerosol_backscatter_dimension,
+    vocabulary_ref: 'ncas:amf'}
+suite_name: product_aerosol_backscatter_dimension_checks

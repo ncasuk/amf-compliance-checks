@@ -1,0 +1,155 @@
+checks:
+- check_id: check_start_of_run_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'start_of_run'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: start_of_run,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_start_of_run_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'start_of_run'
+  parameters: {dtype: float32, var_id: start_of_run, vocabulary_ref: 'ncas:amf'}
+- check_id: check_run_length_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'run_length'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: run_length,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_run_length_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'run_length'
+  parameters: {dtype: float32, var_id: run_length, vocabulary_ref: 'ncas:amf'}
+- check_id: check_number_of_samples_in_run_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'number_of_samples_in_run'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: number_of_samples_in_run,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_number_of_samples_in_run_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'number_of_samples_in_run'
+  parameters: {dtype: float32, var_id: number_of_samples_in_run, vocabulary_ref: 'ncas:amf'}
+- check_id: check_buoyancy_flux_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'buoyancy_flux'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: buoyancy_flux,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_buoyancy_flux_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'buoyancy_flux'
+  parameters: {dtype: float32, var_id: buoyancy_flux, vocabulary_ref: 'ncas:amf'}
+- check_id: check_kinematic_humidity_flux_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'kinematic_humidity_flux'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: kinematic_humidity_flux,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_kinematic_humidity_flux_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'kinematic_humidity_flux'
+  parameters: {dtype: float32, var_id: kinematic_humidity_flux, vocabulary_ref: 'ncas:amf'}
+- check_id: check_kinematic_sonic_temperature_flux_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'kinematic_sonic_temperature_flux'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: kinematic_sonic_temperature_flux,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_kinematic_sonic_temperature_flux_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'kinematic_sonic_temperature_flux'
+  parameters: {dtype: float32, var_id: kinematic_sonic_temperature_flux, vocabulary_ref: 'ncas:amf'}
+- check_id: check_upward_sensible_heat_flux_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'upward_sensible_heat_flux_in_air'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: upward_sensible_heat_flux_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_upward_sensible_heat_flux_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'upward_sensible_heat_flux_in_air'
+  parameters: {dtype: float32, var_id: upward_sensible_heat_flux_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_upward_latent_heat_flux_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'upward_latent_heat_flux_in_air'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: upward_latent_heat_flux_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_upward_latent_heat_flux_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'upward_latent_heat_flux_in_air'
+  parameters: {dtype: float32, var_id: upward_latent_heat_flux_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_momentum_flux_u_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'momentum_flux_u'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: momentum_flux_u,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_momentum_flux_u_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'momentum_flux_u'
+  parameters: {dtype: float32, var_id: momentum_flux_u, vocabulary_ref: 'ncas:amf'}
+- check_id: check_momentum_flux_v_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'momentum_flux_v'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: momentum_flux_v,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_momentum_flux_v_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'momentum_flux_v'
+  parameters: {dtype: float32, var_id: momentum_flux_v, vocabulary_ref: 'ncas:amf'}
+- check_id: check_bowen_ratio_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'bowen_ratio'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: bowen_ratio,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_bowen_ratio_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'bowen_ratio'
+  parameters: {dtype: float32, var_id: bowen_ratio, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_skew_u_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_skew_u'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: qc_flag_skew_u,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_skew_u_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_skew_u'
+  parameters: {dtype: byte, var_id: qc_flag_skew_u, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_skew_v_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_skew_v'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: qc_flag_skew_v,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_skew_v_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_skew_v'
+  parameters: {dtype: byte, var_id: qc_flag_skew_v, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_skew_w_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_skew_w'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: qc_flag_skew_w,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_skew_w_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_skew_w'
+  parameters: {dtype: byte, var_id: qc_flag_skew_w, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_skew_ts_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_skew_ts'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: qc_flag_skew_ts,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_skew_ts_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_skew_ts'
+  parameters: {dtype: byte, var_id: qc_flag_skew_ts, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_kurtosis_u_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_kurtosis_u'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: qc_flag_kurtosis_u,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_kurtosis_u_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_kurtosis_u'
+  parameters: {dtype: byte, var_id: qc_flag_kurtosis_u, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_kurtosis_v_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_kurtosis_v'
+  parameters: {pyessv_namespace: product_flux_estimates_variable, var_id: qc_flag_kurtosis_v,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_kurtosis_v_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_kurtosis_v'
+  parameters: {dtype: byte, var_id: qc_flag_kurtosis_v, vocabulary_ref: 'ncas:amf'}
+suite_name: product_flux_estimates_variable_checks

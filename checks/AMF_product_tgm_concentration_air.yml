@@ -1,0 +1,5 @@
+checks:
+- {__INCLUDE__: AMF_product_common_dimension_air.yml}
+- {__INCLUDE__: AMF_product_common_variable_air.yml}
+- {__INCLUDE__: AMF_product_tgm_concentration_variable.yml}
+suite_name: product_tgm_concentration_air_checks

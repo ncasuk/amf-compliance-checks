@@ -1,0 +1,6 @@
+checks:
+- {__INCLUDE__: AMF_product_brightness_temperature_dimension.yml}
+- {__INCLUDE__: AMF_product_brightness_temperature_variable.yml}
+- {__INCLUDE__: AMF_product_common_dimension_air.yml}
+- {__INCLUDE__: AMF_product_common_variable_air.yml}
+suite_name: product_brightness_temperature_air_checks

@@ -1,0 +1,5 @@
+checks:
+- {__INCLUDE__: AMF_product_common_dimension_sea.yml}
+- {__INCLUDE__: AMF_product_common_variable_sea.yml}
+- {__INCLUDE__: AMF_product_mean_winds_variable.yml}
+suite_name: product_mean_winds_sea_checks

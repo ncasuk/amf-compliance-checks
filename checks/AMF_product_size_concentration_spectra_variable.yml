@@ -1,0 +1,47 @@
+checks:
+- check_id: check_altitude_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'altitude'
+  parameters: {pyessv_namespace: product_size_concentration_spectra_variable, var_id: altitude,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_altitude_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'altitude'
+  parameters: {dtype: float32, var_id: altitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_spectral_reflectivity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'spectral_reflectivity'
+  parameters: {pyessv_namespace: product_size_concentration_spectra_variable, var_id: spectral_reflectivity,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_spectral_reflectivity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'spectral_reflectivity'
+  parameters: {dtype: float32, var_id: spectral_reflectivity, vocabulary_ref: 'ncas:amf'}
+- check_id: check_rain_drop_diameter_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'rain_drop_diameter'
+  parameters: {pyessv_namespace: product_size_concentration_spectra_variable, var_id: rain_drop_diameter,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_rain_drop_diameter_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'rain_drop_diameter'
+  parameters: {dtype: float32, var_id: rain_drop_diameter, vocabulary_ref: 'ncas:amf'}
+- check_id: check_drop_size_distribution_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'drop_size_distribution'
+  parameters: {pyessv_namespace: product_size_concentration_spectra_variable, var_id: drop_size_distribution,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_drop_size_distribution_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'drop_size_distribution'
+  parameters: {dtype: float32, var_id: drop_size_distribution, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag'
+  parameters: {pyessv_namespace: product_size_concentration_spectra_variable, var_id: qc_flag,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag'
+  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+suite_name: product_size_concentration_spectra_variable_checks

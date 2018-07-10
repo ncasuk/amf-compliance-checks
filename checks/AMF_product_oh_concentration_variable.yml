@@ -1,0 +1,50 @@
+checks:
+- check_id: check_number_concentration_of_hydroxyl_radical_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'number_concentration_of_hydroxyl_radical_in_air'
+  parameters: {pyessv_namespace: product_oh_concentration_variable, var_id: number_concentration_of_hydroxyl_radical_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_number_concentration_of_hydroxyl_radical_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'number_concentration_of_hydroxyl_radical_in_air'
+  parameters: {dtype: float32, var_id: number_concentration_of_hydroxyl_radical_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_number_concentration_of_hydroperoxyl_radical_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'number_concentration_of_hydroperoxyl_radical_in_air'
+  parameters: {pyessv_namespace: product_oh_concentration_variable, var_id: number_concentration_of_hydroperoxyl_radical_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_number_concentration_of_hydroperoxyl_radical_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'number_concentration_of_hydroperoxyl_radical_in_air'
+  parameters: {dtype: float32, var_id: number_concentration_of_hydroperoxyl_radical_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_sum_of _hydroxyl_and_hydroperoxyl_radical_concentration_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'sum_of _hydroxyl_and_hydroperoxyl_radical_concentration_in_air'
+  parameters: {pyessv_namespace: product_oh_concentration_variable, var_id: sum_of
+      _hydroxyl_and_hydroperoxyl_radical_concentration_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_sum_of _hydroxyl_and_hydroperoxyl_radical_concentration_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'sum_of _hydroxyl_and_hydroperoxyl_radical_concentration_in_air'
+  parameters: {dtype: float32, var_id: sum_of _hydroxyl_and_hydroperoxyl_radical_concentration_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_hydroxyl_radical_reactivity_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'hydroxyl_radical_reactivity_in_air'
+  parameters: {pyessv_namespace: product_oh_concentration_variable, var_id: hydroxyl_radical_reactivity_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_hydroxyl_radical_reactivity_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'hydroxyl_radical_reactivity_in_air'
+  parameters: {dtype: float32, var_id: hydroxyl_radical_reactivity_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag'
+  parameters: {pyessv_namespace: product_oh_concentration_variable, var_id: qc_flag,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag'
+  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+suite_name: product_oh_concentration_variable_checks

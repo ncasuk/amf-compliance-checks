@@ -1,0 +1,76 @@
+checks:
+- check_id: check_mole_fraction_of_nitric_oxide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_nitric_oxide_in_air'
+  parameters: {pyessv_namespace: product_nox_noxy_concentration_variable, var_id: mole_fraction_of_nitric_oxide_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_nitric_oxide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_nitric_oxide_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_nitric_oxide_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_nitrogen_dioxide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_nitrogen_dioxide_in_air'
+  parameters: {pyessv_namespace: product_nox_noxy_concentration_variable, var_id: mole_fraction_of_nitrogen_dioxide_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_nitrogen_dioxide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_nitrogen_dioxide_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_nitrogen_dioxide_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_nox_expresssed_as_nitrogen_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_nox_expresssed_as_nitrogen_in_air'
+  parameters: {pyessv_namespace: product_nox_noxy_concentration_variable, var_id: mole_fraction_of_nox_expresssed_as_nitrogen_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_nox_expresssed_as_nitrogen_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_nox_expresssed_as_nitrogen_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_nox_expresssed_as_nitrogen_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_noy_expresssed_as_nitrogen_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_noy_expresssed_as_nitrogen_in_air'
+  parameters: {pyessv_namespace: product_nox_noxy_concentration_variable, var_id: mole_fraction_of_noy_expresssed_as_nitrogen_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_noy_expresssed_as_nitrogen_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_noy_expresssed_as_nitrogen_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_noy_expresssed_as_nitrogen_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_no_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_no'
+  parameters: {pyessv_namespace: product_nox_noxy_concentration_variable, var_id: qc_flag_no,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_no_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_no'
+  parameters: {dtype: byte, var_id: qc_flag_no, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_no2_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_no2'
+  parameters: {pyessv_namespace: product_nox_noxy_concentration_variable, var_id: qc_flag_no2,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_no2_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_no2'
+  parameters: {dtype: byte, var_id: qc_flag_no2, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_nox_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_nox'
+  parameters: {pyessv_namespace: product_nox_noxy_concentration_variable, var_id: qc_flag_nox,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_nox_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_nox'
+  parameters: {dtype: byte, var_id: qc_flag_nox, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_noy_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_noy'
+  parameters: {pyessv_namespace: product_nox_noxy_concentration_variable, var_id: qc_flag_noy,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_noy_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_noy'
+  parameters: {dtype: byte, var_id: qc_flag_noy, vocabulary_ref: 'ncas:amf'}
+suite_name: product_nox_noxy_concentration_variable_checks

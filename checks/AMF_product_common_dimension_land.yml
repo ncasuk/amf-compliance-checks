@@ -1,0 +1,16 @@
+checks:
+- check_id: check_time_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'time'
+  parameters: {dim_id: time, pyessv_namespace: product_common_dimension_land, vocabulary_ref: 'ncas:amf'}
+- check_id: check_latitude_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'latitude'
+  parameters: {dim_id: latitude, pyessv_namespace: product_common_dimension_land,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_longitude_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'longitude'
+  parameters: {dim_id: longitude, pyessv_namespace: product_common_dimension_land,
+    vocabulary_ref: 'ncas:amf'}
+suite_name: product_common_dimension_land_checks

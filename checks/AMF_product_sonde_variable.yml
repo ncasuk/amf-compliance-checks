@@ -1,0 +1,94 @@
+checks:
+- check_id: check_altitude_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'altitude'
+  parameters: {pyessv_namespace: product_sonde_variable, var_id: altitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_altitude_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'altitude'
+  parameters: {dtype: float32, var_id: altitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_latitude_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'latitude'
+  parameters: {pyessv_namespace: product_sonde_variable, var_id: latitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_latitude_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'latitude'
+  parameters: {dtype: float32, var_id: latitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_longitude_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'longitude'
+  parameters: {pyessv_namespace: product_sonde_variable, var_id: longitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_longitude_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'longitude'
+  parameters: {dtype: float32, var_id: longitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_air_pressure_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'air_pressure'
+  parameters: {pyessv_namespace: product_sonde_variable, var_id: air_pressure, vocabulary_ref: 'ncas:amf'}
+- check_id: check_air_pressure_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'air_pressure'
+  parameters: {dtype: float32, var_id: air_pressure, vocabulary_ref: 'ncas:amf'}
+- check_id: check_air_temperature_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'air_temperature'
+  parameters: {pyessv_namespace: product_sonde_variable, var_id: air_temperature,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_air_temperature_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'air_temperature'
+  parameters: {dtype: float32, var_id: air_temperature, vocabulary_ref: 'ncas:amf'}
+- check_id: check_relative_humidity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'relative_humidity'
+  parameters: {pyessv_namespace: product_sonde_variable, var_id: relative_humidity,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_relative_humidity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'relative_humidity'
+  parameters: {dtype: float32, var_id: relative_humidity, vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_speed_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'wind_speed'
+  parameters: {pyessv_namespace: product_sonde_variable, var_id: wind_speed, vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_speed_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'wind_speed'
+  parameters: {dtype: float32, var_id: wind_speed, vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_from_direction_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'wind_from_direction'
+  parameters: {pyessv_namespace: product_sonde_variable, var_id: wind_from_direction,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_from_direction_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'wind_from_direction'
+  parameters: {dtype: float32, var_id: wind_from_direction, vocabulary_ref: 'ncas:amf'}
+- check_id: check_upward_balloon_velocity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'upward_balloon_velocity'
+  parameters: {pyessv_namespace: product_sonde_variable, var_id: upward_balloon_velocity,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_upward_balloon_velocity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'upward_balloon_velocity'
+  parameters: {dtype: float32, var_id: upward_balloon_velocity, vocabulary_ref: 'ncas:amf'}
+- check_id: check_elapsed_time_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'elapsed_time'
+  parameters: {pyessv_namespace: product_sonde_variable, var_id: elapsed_time, vocabulary_ref: 'ncas:amf'}
+- check_id: check_elapsed_time_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'elapsed_time'
+  parameters: {dtype: float32, var_id: elapsed_time, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag'
+  parameters: {pyessv_namespace: product_sonde_variable, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag'
+  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+suite_name: product_sonde_variable_checks
