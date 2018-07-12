@@ -25,10 +25,10 @@ checks:
   parameters: {attribute: creator_email, regex: '[^@\s]+@[^@\s]+\.[^\s@]+'}
 - check_id: check_creator_url_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: creator_url, regex: '\w+://[^\s]+\.[^\s\.]+'}
+  parameters: {attribute: creator_url, regex: 'https?://[^\s]+\.[^\s]*[^\s\.](/[^\s]+)?'}
 - check_id: check_processing_software_url_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: processing_software_url, regex: '\w+://[^\s]+\.[^\s\.]+'}
+  parameters: {attribute: processing_software_url, regex: 'https?://[^\s]+\.[^\s]*[^\s\.](/[^\s]+)?'}
 - check_id: check_processing_software_version_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: processing_software_version, regex: '.{2,}'}
@@ -40,7 +40,7 @@ checks:
   parameters: {attribute: calibration_certification_date, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.*'}
 - check_id: check_calibration_certification_url_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: calibration_certification_url, regex: '\w+://[^\s]+\.[^\s\.]+'}
+  parameters: {attribute: calibration_certification_url, regex: 'https?://[^\s]+\.[^\s]*[^\s\.](/[^\s]+)?'}
 - check_id: check_sampling_interval_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: sampling_interval, regex: '.{2,}'}
@@ -67,7 +67,7 @@ checks:
   parameters: {attribute: project_principal_investigator_email, regex: '[^@\s]+@[^@\s]+\.[^\s@]+'}
 - check_id: check_project_principal_investigator_url_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: project_principal_investigator_url, regex: '\w+://[^\s]+\.[^\s\.]+'}
+  parameters: {attribute: project_principal_investigator_url, regex: 'https?://[^\s]+\.[^\s]*[^\s\.](/[^\s]+)?'}
 - check_id: check_licence_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: licence, regex: 'Data\ usage\ licence\ \-\ UK\ Government\
@@ -85,12 +85,15 @@ checks:
 - check_id: check_time_coverage_end_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: time_coverage_end, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.*'}
+- check_id: check_platform_altitude_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: platform_altitude, regex: '-?\d+(\.\d+)? m'}
 - check_id: check_location_keywords_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: location_keywords, regex: '.{3,}'}
 - check_id: check_amf_vocabularies_release_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: amf_vocabularies_release, regex: '\w+://[^\s]+\.[^\s\.]+'}
+  parameters: {attribute: amf_vocabularies_release, regex: 'https?://[^\s]+\.[^\s]*[^\s\.](/[^\s]+)?'}
 - check_id: check_history_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: history, regex: '.{10,}'}
