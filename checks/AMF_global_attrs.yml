@@ -1,0 +1,100 @@
+checks:
+- check_id: check_Conventions_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: Conventions, regex: 'CF\-1\.6\,\ NCAS\-AMF\-1\.0'}
+- check_id: check_instrument_manufacturer_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: instrument_manufacturer, regex: '.{2,}'}
+- check_id: check_instrument_model_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: instrument_model, regex: '.{3,}'}
+- check_id: check_instrument_serial_number_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: instrument_serial_number, regex: '.{3,}'}
+- check_id: check_instrument_software_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: instrument_software, regex: '.{3,}'}
+- check_id: check_instrument_software_version_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: instrument_software_version, regex: '.{2,}'}
+- check_id: check_creator_name_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: creator_name, regex: '.{3,}'}
+- check_id: check_creator_email_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: creator_email, regex: '[^@\s]+@[^@\s]+\.[^\s@]+'}
+- check_id: check_creator_url_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: creator_url, regex: '\w+://[^\s]+\.[^\s\.]+'}
+- check_id: check_processing_software_url_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: processing_software_url, regex: '\w+://[^\s]+\.[^\s\.]+'}
+- check_id: check_processing_software_version_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: processing_software_version, regex: '.{2,}'}
+- check_id: check_calibration_sensitivity_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: calibration_sensitivity, regex: '.{5,}'}
+- check_id: check_calibration_certification_date_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: calibration_certification_date, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.*'}
+- check_id: check_calibration_certification_url_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: calibration_certification_url, regex: '\w+://[^\s]+\.[^\s\.]+'}
+- check_id: check_sampling_interval_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: sampling_interval, regex: '.{2,}'}
+- check_id: check_averaging_interval_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: averaging_interval, regex: '.{2,}'}
+- check_id: check_product_version_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: product_version, regex: v\d\.\d}
+- check_id: check_processing_level_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: processing_level, regex: '-?\d+'}
+- check_id: check_last_revised_date_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: last_revised_date, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.*'}
+- check_id: check_project_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: project, regex: '.{3,}'}
+- check_id: check_project_principal_investigator_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: project_principal_investigator, regex: '.{3,}'}
+- check_id: check_project_principal_investigator_email_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: project_principal_investigator_email, regex: '[^@\s]+@[^@\s]+\.[^\s@]+'}
+- check_id: check_project_principal_investigator_url_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: project_principal_investigator_url, regex: '\w+://[^\s]+\.[^\s\.]+'}
+- check_id: check_licence_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: licence, regex: 'Data\ usage\ licence\ \-\ UK\ Government\
+      Open\ Licence\ agreement\:\ http\:\/\/www\.nationalarchives\.gov\.uk\/doc\/open\-government\-licence'}
+- check_id: check_acknowledgement_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: acknowledgement, regex: Acknowledgement\ of\ NCAS\ as\ the\
+      data\ provider\ is\ required\ whenever\ and\ wherever\ these\ data\ are\ used}
+- check_id: check_title_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: title, regex: '.{10,}'}
+- check_id: check_time_coverage_start_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: time_coverage_start, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.*'}
+- check_id: check_time_coverage_end_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: time_coverage_end, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.*'}
+- check_id: check_location_keywords_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: location_keywords, regex: '.{3,}'}
+- check_id: check_amf_vocabularies_release_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: amf_vocabularies_release, regex: '\w+://[^\s]+\.[^\s\.]+'}
+- check_id: check_history_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: history, regex: '.{10,}'}
+- check_id: check_comment_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters: {attribute: comment, regex: '.{4,}'}
+suite_name: global_attrs_checks
