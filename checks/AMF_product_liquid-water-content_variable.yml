@@ -1,0 +1,21 @@
+checks:
+- check_id: check_atmosphere_mass_content_of_cloud_liquid_water_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'atmosphere_mass_content_of_cloud_liquid_water'
+  parameters: {pyessv_namespace: product_liquid-water-content_variable, var_id: atmosphere_mass_content_of_cloud_liquid_water,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_atmosphere_mass_content_of_cloud_liquid_water_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'atmosphere_mass_content_of_cloud_liquid_water'
+  parameters: {dtype: float32, var_id: atmosphere_mass_content_of_cloud_liquid_water,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag'
+  parameters: {pyessv_namespace: product_liquid-water-content_variable, var_id: qc_flag,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag'
+  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+suite_name: product_liquid-water-content_variable_checks

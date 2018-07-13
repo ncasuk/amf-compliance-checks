@@ -1,0 +1,150 @@
+checks:
+- check_id: check_mole_fraction_of_carbon_tetrachloride_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_carbon_tetrachloride_in_air'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: mole_fraction_of_carbon_tetrachloride_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_carbon_tetrachloride_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_carbon_tetrachloride_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_carbon_tetrachloride_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_bromoform_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_bromoform_in_air'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: mole_fraction_of_bromoform_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_bromoform_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_bromoform_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_bromoform_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_diiodomethane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_diiodomethane_in_air'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: mole_fraction_of_diiodomethane_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_diiodomethane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_diiodomethane_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_diiodomethane_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_chloroiodomethane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_chloroiodomethane_in_air'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: mole_fraction_of_chloroiodomethane_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_chloroiodomethane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_chloroiodomethane_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_chloroiodomethane_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_bromodichloromethane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_bromodichloromethane_in_air'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: mole_fraction_of_bromodichloromethane_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_bromodichloromethane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_bromodichloromethane_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_bromodichloromethane_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_dibromomethane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_dibromomethane_in_air'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: mole_fraction_of_dibromomethane_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_dibromomethane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_dibromomethane_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_dibromomethane_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_chloroform_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_chloroform_in_air'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: mole_fraction_of_chloroform_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_chloroform_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_chloroform_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_chloroform_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_methyl_iodide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_methyl_iodide_in_air'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: mole_fraction_of_methyl_iodide_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_methyl_iodide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_methyl_iodide_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_methyl_iodide_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_bromochloromethane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_bromochloromethane_in_air'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: mole_fraction_of_bromochloromethane_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_bromochloromethane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_bromochloromethane_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_bromochloromethane_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ccl4_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_ccl4'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: qc_flag_ccl4,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ccl4_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_ccl4'
+  parameters: {dtype: byte, var_id: qc_flag_ccl4, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_chbr3_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_chbr3'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: qc_flag_chbr3,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_chbr3_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_chbr3'
+  parameters: {dtype: byte, var_id: qc_flag_chbr3, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ch2i2_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_ch2i2'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: qc_flag_ch2i2,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ch2i2_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_ch2i2'
+  parameters: {dtype: byte, var_id: qc_flag_ch2i2, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ch2icl_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_ch2icl'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: qc_flag_ch2icl,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ch2icl_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_ch2icl'
+  parameters: {dtype: byte, var_id: qc_flag_ch2icl, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_chbrcl2_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_chbrcl2'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: qc_flag_chbrcl2,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_chbrcl2_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_chbrcl2'
+  parameters: {dtype: byte, var_id: qc_flag_chbrcl2, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ch2br2_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_ch2br2'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: qc_flag_ch2br2,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ch2br2_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_ch2br2'
+  parameters: {dtype: byte, var_id: qc_flag_ch2br2, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_chcl3_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_chcl3'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: qc_flag_chcl3,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_chcl3_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_chcl3'
+  parameters: {dtype: byte, var_id: qc_flag_chcl3, vocabulary_ref: 'ncas:amf'}
+suite_name: product_halocarbon-concentration_variable_checks

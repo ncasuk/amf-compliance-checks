@@ -1,7 +1,0 @@
-checks:
-- check_id: check_index_dimension_attrs
-  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
-  comments: Checks the dimension attributes for 'index'
-  parameters: {dim_id: index, pyessv_namespace: product_rain_lwc_velocity_reflectivity_dimension,
-    vocabulary_ref: 'ncas:amf'}
-suite_name: product_rain_lwc_velocity_reflectivity_dimension_checks

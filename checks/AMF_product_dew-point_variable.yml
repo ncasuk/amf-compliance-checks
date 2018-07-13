@@ -1,0 +1,37 @@
+checks:
+- check_id: check_dew_point_temperature_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'dew_point_temperature'
+  parameters: {pyessv_namespace: product_dew-point_variable, var_id: dew_point_temperature,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_dew_point_temperature_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'dew_point_temperature'
+  parameters: {dtype: float32, var_id: dew_point_temperature, vocabulary_ref: 'ncas:amf'}
+- check_id: check_relative_humidity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'relative_humidity'
+  parameters: {pyessv_namespace: product_dew-point_variable, var_id: relative_humidity,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_relative_humidity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'relative_humidity'
+  parameters: {dtype: float32, var_id: relative_humidity, vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_water_vapor_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_water_vapor_in_air'
+  parameters: {pyessv_namespace: product_dew-point_variable, var_id: mole_fraction_of_water_vapor_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_mole_fraction_of_water_vapor_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_water_vapor_in_air'
+  parameters: {dtype: float32, var_id: mole_fraction_of_water_vapor_in_air, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag'
+  parameters: {pyessv_namespace: product_dew-point_variable, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag'
+  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+suite_name: product_dew-point_variable_checks

@@ -1,0 +1,49 @@
+checks:
+- check_id: check_altitude_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'altitude'
+  parameters: {pyessv_namespace: product_aerosol-extinction_variable, var_id: altitude,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_altitude_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'altitude'
+  parameters: {dtype: float32, var_id: altitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_355_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_355'
+  parameters: {pyessv_namespace: product_aerosol-extinction_variable, var_id: volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_355,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_355_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_355'
+  parameters: {dtype: float32, var_id: volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_355,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_316_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_316'
+  parameters: {pyessv_namespace: product_aerosol-extinction_variable, var_id: volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_316,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_316_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_316'
+  parameters: {dtype: float32, var_id: volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles_316,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_355_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_355'
+  parameters: {pyessv_namespace: product_aerosol-extinction_variable, var_id: qc_flag_355,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_355_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_355'
+  parameters: {dtype: byte, var_id: qc_flag_355, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_316_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_316'
+  parameters: {pyessv_namespace: product_aerosol-extinction_variable, var_id: qc_flag_316,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_316_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_316'
+  parameters: {dtype: byte, var_id: qc_flag_316, vocabulary_ref: 'ncas:amf'}
+suite_name: product_aerosol-extinction_variable_checks

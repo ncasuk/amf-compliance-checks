@@ -1,0 +1,64 @@
+checks:
+- check_id: check_cloud_base_altitude_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'cloud_base_altitude'
+  parameters: {pyessv_namespace: product_cloud-base_variable, var_id: cloud_base_altitude,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_cloud_base_altitude_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'cloud_base_altitude'
+  parameters: {dtype: float32, var_id: cloud_base_altitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_laser_pulse_energy_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'laser_pulse_energy'
+  parameters: {pyessv_namespace: product_cloud-base_variable, var_id: laser_pulse_energy,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_laser_pulse_energy_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'laser_pulse_energy'
+  parameters: {dtype: float32, var_id: laser_pulse_energy, vocabulary_ref: 'ncas:amf'}
+- check_id: check_laser_temperature_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'laser_temperature'
+  parameters: {pyessv_namespace: product_cloud-base_variable, var_id: laser_temperature,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_laser_temperature_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'laser_temperature'
+  parameters: {dtype: float32, var_id: laser_temperature, vocabulary_ref: 'ncas:amf'}
+- check_id: check_sensor_zenith_angle_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'sensor_zenith_angle'
+  parameters: {pyessv_namespace: product_cloud-base_variable, var_id: sensor_zenith_angle,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_sensor_zenith_angle_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'sensor_zenith_angle'
+  parameters: {dtype: float32, var_id: sensor_zenith_angle, vocabulary_ref: 'ncas:amf'}
+- check_id: check_window_contamination_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'window_contamination'
+  parameters: {pyessv_namespace: product_cloud-base_variable, var_id: window_contamination,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_window_contamination_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'window_contamination'
+  parameters: {dtype: float32, var_id: window_contamination, vocabulary_ref: 'ncas:amf'}
+- check_id: check_background_light_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'background_light'
+  parameters: {pyessv_namespace: product_cloud-base_variable, var_id: background_light,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_background_light_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'background_light'
+  parameters: {dtype: float32, var_id: background_light, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag'
+  parameters: {pyessv_namespace: product_cloud-base_variable, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag'
+  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+suite_name: product_cloud-base_variable_checks

@@ -1,0 +1,9 @@
+checks:
+- {__INCLUDE__: AMF_file_info.yml}
+- {__INCLUDE__: AMF_file_structure.yml}
+- {__INCLUDE__: AMF_global_attrs.yml}
+- {__INCLUDE__: AMF_product_common_dimension_land.yml}
+- {__INCLUDE__: AMF_product_common_variable_land.yml}
+- {__INCLUDE__: AMF_product_full-troposphere-temperature-profiles_dimension.yml}
+- {__INCLUDE__: AMF_product_full-troposphere-temperature-profiles_variable.yml}
+suite_name: product_full-troposphere-temperature-profiles_land_checks

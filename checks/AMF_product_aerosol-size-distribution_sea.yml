@@ -1,0 +1,9 @@
+checks:
+- {__INCLUDE__: AMF_file_info.yml}
+- {__INCLUDE__: AMF_file_structure.yml}
+- {__INCLUDE__: AMF_global_attrs.yml}
+- {__INCLUDE__: AMF_product_aerosol-size-distribution_dimension.yml}
+- {__INCLUDE__: AMF_product_aerosol-size-distribution_variable.yml}
+- {__INCLUDE__: AMF_product_common_dimension_sea.yml}
+- {__INCLUDE__: AMF_product_common_variable_sea.yml}
+suite_name: product_aerosol-size-distribution_sea_checks

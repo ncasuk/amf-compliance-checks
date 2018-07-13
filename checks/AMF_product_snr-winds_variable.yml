@@ -1,0 +1,144 @@
+checks:
+- check_id: check_altitude_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'altitude'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: altitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_altitude_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'altitude'
+  parameters: {dtype: float32, var_id: altitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_size_of_gate_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'size_of_gate'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: size_of_gate,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_size_of_gate_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'size_of_gate'
+  parameters: {dtype: float32, var_id: size_of_gate, vocabulary_ref: 'ncas:amf'}
+- check_id: check_altitude_of_first_gate_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'altitude_of_first_gate'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: altitude_of_first_gate,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_altitude_of_first_gate_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'altitude_of_first_gate'
+  parameters: {dtype: float32, var_id: altitude_of_first_gate, vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_speed_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'wind_speed'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: wind_speed, vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_speed_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'wind_speed'
+  parameters: {dtype: float32, var_id: wind_speed, vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_from_direction_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'wind_from_direction'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: wind_from_direction,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_from_direction_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'wind_from_direction'
+  parameters: {dtype: float32, var_id: wind_from_direction, vocabulary_ref: 'ncas:amf'}
+- check_id: check_eastward_wind_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'eastward_wind'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: eastward_wind,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_eastward_wind_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'eastward_wind'
+  parameters: {dtype: float32, var_id: eastward_wind, vocabulary_ref: 'ncas:amf'}
+- check_id: check_northward_wind_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'northward_wind'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: northward_wind,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_northward_wind_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'northward_wind'
+  parameters: {dtype: float32, var_id: northward_wind, vocabulary_ref: 'ncas:amf'}
+- check_id: check_upward_air_velocity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'upward_air_velocity'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: upward_air_velocity,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_upward_air_velocity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'upward_air_velocity'
+  parameters: {dtype: float32, var_id: upward_air_velocity, vocabulary_ref: 'ncas:amf'}
+- check_id: check_signal_to_noise_ratio_of_beam_1_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'signal_to_noise_ratio_of_beam_1'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: signal_to_noise_ratio_of_beam_1,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_signal_to_noise_ratio_of_beam_1_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'signal_to_noise_ratio_of_beam_1'
+  parameters: {dtype: float32, var_id: signal_to_noise_ratio_of_beam_1, vocabulary_ref: 'ncas:amf'}
+- check_id: check_signal_to_noise_ratio_of_beam_2_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'signal_to_noise_ratio_of_beam_2'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: signal_to_noise_ratio_of_beam_2,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_signal_to_noise_ratio_of_beam_2_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'signal_to_noise_ratio_of_beam_2'
+  parameters: {dtype: float32, var_id: signal_to_noise_ratio_of_beam_2, vocabulary_ref: 'ncas:amf'}
+- check_id: check_signal_to_noise_ratio_of_beam_3_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'signal_to_noise_ratio_of_beam_3'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: signal_to_noise_ratio_of_beam_3,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_signal_to_noise_ratio_of_beam_3_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'signal_to_noise_ratio_of_beam_3'
+  parameters: {dtype: float32, var_id: signal_to_noise_ratio_of_beam_3, vocabulary_ref: 'ncas:amf'}
+- check_id: check_signal_to_noise_ratio_minimum_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'signal_to_noise_ratio_minimum'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: signal_to_noise_ratio_minimum,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_signal_to_noise_ratio_minimum_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'signal_to_noise_ratio_minimum'
+  parameters: {dtype: float32, var_id: signal_to_noise_ratio_minimum, vocabulary_ref: 'ncas:amf'}
+- check_id: check_spectral_width of beam_1_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'spectral_width of beam_1'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: spectral_width
+      of beam_1, vocabulary_ref: 'ncas:amf'}
+- check_id: check_spectral_width of beam_1_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'spectral_width of beam_1'
+  parameters: {dtype: float32, var_id: spectral_width of beam_1, vocabulary_ref: 'ncas:amf'}
+- check_id: check_spectral_width of beam_2_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'spectral_width of beam_2'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: spectral_width
+      of beam_2, vocabulary_ref: 'ncas:amf'}
+- check_id: check_spectral_width of beam_2_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'spectral_width of beam_2'
+  parameters: {dtype: float32, var_id: spectral_width of beam_2, vocabulary_ref: 'ncas:amf'}
+- check_id: check_spectral_width of beam_3_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'spectral_width of beam_3'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: spectral_width
+      of beam_3, vocabulary_ref: 'ncas:amf'}
+- check_id: check_spectral_width of beam_3_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'spectral_width of beam_3'
+  parameters: {dtype: float32, var_id: spectral_width of beam_3, vocabulary_ref: 'ncas:amf'}
+- check_id: check_skew_of_beam_1_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'skew_of_beam_1'
+  parameters: {pyessv_namespace: product_snr-winds_variable, var_id: skew_of_beam_1,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_skew_of_beam_1_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'skew_of_beam_1'
+  parameters: {dtype: float32, var_id: skew_of_beam_1, vocabulary_ref: 'ncas:amf'}
+suite_name: product_snr-winds_variable_checks
