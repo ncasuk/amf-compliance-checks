@@ -71,4 +71,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag'
   parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+description: Check 'product rain-lwc-velocity-reflectivity variable' in AMF files
 suite_name: product_rain-lwc-velocity-reflectivity_variable_checks

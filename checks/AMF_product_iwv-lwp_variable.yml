@@ -175,4 +175,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_channel_14_failure'
   parameters: {dtype: byte, var_id: qc_flag_channel_14_failure, vocabulary_ref: 'ncas:amf'}
+description: Check 'product iwv-lwp variable' in AMF files
 suite_name: product_iwv-lwp_variable_checks

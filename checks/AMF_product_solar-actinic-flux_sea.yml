@@ -5,4 +5,5 @@ checks:
 - {__INCLUDE__: AMF_product_common_dimension_sea.yml}
 - {__INCLUDE__: AMF_product_common_variable_sea.yml}
 - {__INCLUDE__: AMF_product_solar-actinic-flux_variable.yml}
+description: Check 'product solar-actinic-flux sea' in AMF files
 suite_name: product_solar-actinic-flux_sea_checks

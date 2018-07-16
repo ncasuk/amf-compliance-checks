@@ -6,4 +6,5 @@ checks:
 - {__INCLUDE__: AMF_product_aerosol-optical-depth_variable.yml}
 - {__INCLUDE__: AMF_product_common_dimension_air.yml}
 - {__INCLUDE__: AMF_product_common_variable_air.yml}
+description: Check 'product aerosol-optical-depth air' in AMF files
 suite_name: product_aerosol-optical-depth_air_checks

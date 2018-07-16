@@ -13,4 +13,5 @@ checks:
   comments: Checks the dimension attributes for 'longitude'
   parameters: {dim_id: longitude, pyessv_namespace: product_common_dimension_land,
     vocabulary_ref: 'ncas:amf'}
+description: Check 'product common dimension land' in AMF files
 suite_name: product_common_dimension_land_checks

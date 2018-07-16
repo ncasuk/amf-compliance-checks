@@ -100,4 +100,5 @@ checks:
 - check_id: check_comment_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: comment, regex: '.{4,}'}
+description: Check 'global_attrs' in AMF files
 suite_name: global_attrs_checks

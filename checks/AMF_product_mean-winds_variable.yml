@@ -152,4 +152,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_wind_component_northward'
   parameters: {dtype: byte, var_id: qc_flag_wind_component_northward, vocabulary_ref: 'ncas:amf'}
+description: Check 'product mean-winds variable' in AMF files
 suite_name: product_mean-winds_variable_checks

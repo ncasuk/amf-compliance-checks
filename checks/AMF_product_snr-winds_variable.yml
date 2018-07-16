@@ -141,4 +141,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'skew_of_beam_1'
   parameters: {dtype: float32, var_id: skew_of_beam_1, vocabulary_ref: 'ncas:amf'}
+description: Check 'product snr-winds variable' in AMF files
 suite_name: product_snr-winds_variable_checks

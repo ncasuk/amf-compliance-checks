@@ -9,4 +9,5 @@ checks:
   comments: Checks the dimension attributes for 'index_of_range'
   parameters: {dim_id: index_of_range, pyessv_namespace: product_aerosol-backscatter-radial-winds_dimension,
     vocabulary_ref: 'ncas:amf'}
+description: Check 'product aerosol-backscatter-radial-winds dimension' in AMF files
 suite_name: product_aerosol-backscatter-radial-winds_dimension_checks

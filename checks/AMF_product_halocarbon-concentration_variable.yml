@@ -147,4 +147,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_chcl3'
   parameters: {dtype: byte, var_id: qc_flag_chcl3, vocabulary_ref: 'ncas:amf'}
+description: Check 'product halocarbon-concentration variable' in AMF files
 suite_name: product_halocarbon-concentration_variable_checks

@@ -4,4 +4,5 @@ checks:
   comments: Checks the dimension attributes for 'index'
   parameters: {dim_id: index, pyessv_namespace: product_rain-lwc-velocity-reflectivity_dimension,
     vocabulary_ref: 'ncas:amf'}
+description: Check 'product rain-lwc-velocity-reflectivity dimension' in AMF files
 suite_name: product_rain-lwc-velocity-reflectivity_dimension_checks

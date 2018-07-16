@@ -5,4 +5,5 @@ checks:
 - {__INCLUDE__: AMF_product_common_dimension_land.yml}
 - {__INCLUDE__: AMF_product_common_variable_land.yml}
 - {__INCLUDE__: AMF_product_flux-estimates_variable.yml}
+description: Check 'product flux-estimates land' in AMF files
 suite_name: product_flux-estimates_land_checks

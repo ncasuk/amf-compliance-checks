@@ -4,4 +4,6 @@ checks:
   comments: Checks the dimension attributes for 'index'
   parameters: {dim_id: index, pyessv_namespace: product_full-troposphere-temperature-profiles_dimension,
     vocabulary_ref: 'ncas:amf'}
+description: Check 'product full-troposphere-temperature-profiles dimension' in AMF
+  files
 suite_name: product_full-troposphere-temperature-profiles_dimension_checks

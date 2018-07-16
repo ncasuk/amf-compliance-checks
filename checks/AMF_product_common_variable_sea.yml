@@ -146,4 +146,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'day'
   parameters: {dtype: int32, var_id: day, vocabulary_ref: 'ncas:amf'}
+description: Check 'product common variable sea' in AMF files
 suite_name: product_common_variable_sea_checks

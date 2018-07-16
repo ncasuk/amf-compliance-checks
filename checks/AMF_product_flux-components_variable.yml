@@ -144,4 +144,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'eastward_wind_rotated_to_run'
   parameters: {dtype: float32, var_id: eastward_wind_rotated_to_run, vocabulary_ref: 'ncas:amf'}
+description: Check 'product flux-components variable' in AMF files
 suite_name: product_flux-components_variable_checks

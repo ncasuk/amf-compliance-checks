@@ -171,4 +171,5 @@ checks:
   comments: Checks the variable attributes for 'qc_flag_channel_13_failure'
   parameters: {pyessv_namespace: product_brightness-temperature_variable, var_id: qc_flag_channel_13_failure,
     vocabulary_ref: 'ncas:amf'}
+description: Check 'product brightness-temperature variable' in AMF files
 suite_name: product_brightness-temperature_variable_checks

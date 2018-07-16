@@ -152,4 +152,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_kurtosis_v'
   parameters: {dtype: byte, var_id: qc_flag_kurtosis_v, vocabulary_ref: 'ncas:amf'}
+description: Check 'product flux-estimates variable' in AMF files
 suite_name: product_flux-estimates_variable_checks

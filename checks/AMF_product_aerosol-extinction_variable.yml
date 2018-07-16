@@ -46,4 +46,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_316'
   parameters: {dtype: byte, var_id: qc_flag_316, vocabulary_ref: 'ncas:amf'}
+description: Check 'product aerosol-extinction variable' in AMF files
 suite_name: product_aerosol-extinction_variable_checks

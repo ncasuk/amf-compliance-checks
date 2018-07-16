@@ -6,4 +6,5 @@ checks:
 - {__INCLUDE__: AMF_product_common_variable_sea.yml}
 - {__INCLUDE__: AMF_product_flux-components_dimension.yml}
 - {__INCLUDE__: AMF_product_flux-components_variable.yml}
+description: Check 'product flux-components sea' in AMF files
 suite_name: product_flux-components_sea_checks

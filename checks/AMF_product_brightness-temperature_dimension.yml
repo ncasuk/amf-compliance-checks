@@ -4,4 +4,5 @@ checks:
   comments: Checks the dimension attributes for 'radiation_frequency'
   parameters: {dim_id: radiation_frequency, pyessv_namespace: product_brightness-temperature_dimension,
     vocabulary_ref: 'ncas:amf'}
+description: Check 'product brightness-temperature dimension' in AMF files
 suite_name: product_brightness-temperature_dimension_checks

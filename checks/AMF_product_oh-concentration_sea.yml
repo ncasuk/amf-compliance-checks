@@ -5,4 +5,5 @@ checks:
 - {__INCLUDE__: AMF_product_common_dimension_sea.yml}
 - {__INCLUDE__: AMF_product_common_variable_sea.yml}
 - {__INCLUDE__: AMF_product_oh-concentration_variable.yml}
+description: Check 'product oh-concentration sea' in AMF files
 suite_name: product_oh-concentration_sea_checks

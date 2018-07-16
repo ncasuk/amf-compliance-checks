@@ -5,4 +5,5 @@ checks:
 - {__INCLUDE__: AMF_product_common_dimension_air.yml}
 - {__INCLUDE__: AMF_product_common_variable_air.yml}
 - {__INCLUDE__: AMF_product_flux-estimates_variable.yml}
+description: Check 'product flux-estimates air' in AMF files
 suite_name: product_flux-estimates_air_checks

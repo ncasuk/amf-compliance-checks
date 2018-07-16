@@ -143,4 +143,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_background_noise'
   parameters: {dtype: byte, var_id: qc_flag_background_noise, vocabulary_ref: 'ncas:amf'}
+description: Check 'product acoustic-backscatter-winds variable' in AMF files
 suite_name: product_acoustic-backscatter-winds_variable_checks

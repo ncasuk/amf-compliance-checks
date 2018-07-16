@@ -4,4 +4,5 @@ checks:
   comments: Checks the dimension attributes for 'layer_index'
   parameters: {dim_id: layer_index, pyessv_namespace: product_cloud-base_dimension,
     vocabulary_ref: 'ncas:amf'}
+description: Check 'product cloud-base dimension' in AMF files
 suite_name: product_cloud-base_dimension_checks

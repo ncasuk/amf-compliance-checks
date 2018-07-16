@@ -4,4 +4,5 @@ checks:
   comments: Checks the dimension attributes for 'index'
   parameters: {dim_id: index, pyessv_namespace: product_flux-components_dimension,
     vocabulary_ref: 'ncas:amf'}
+description: Check 'product flux-components dimension' in AMF files
 suite_name: product_flux-components_dimension_checks

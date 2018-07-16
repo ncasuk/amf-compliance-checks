@@ -53,4 +53,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_soil_water_potential'
   parameters: {dtype: byte, var_id: qc_flag_soil_water_potential, vocabulary_ref: 'ncas:amf'}
+description: Check 'product soil variable' in AMF files
 suite_name: product_soil_variable_checks

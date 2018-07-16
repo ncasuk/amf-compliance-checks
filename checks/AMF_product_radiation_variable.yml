@@ -89,4 +89,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_cleaning'
   parameters: {dtype: byte, var_id: qc_flag_cleaning, vocabulary_ref: 'ncas:amf'}
+description: Check 'product radiation variable' in AMF files
 suite_name: product_radiation_variable_checks

@@ -9,4 +9,5 @@ checks:
   comments: Checks the dimension attributes for 'index_bin'
   parameters: {dim_id: index_bin, pyessv_namespace: product_size-concentration-spectra_dimension,
     vocabulary_ref: 'ncas:amf'}
+description: Check 'product size-concentration-spectra dimension' in AMF files
 suite_name: product_size-concentration-spectra_dimension_checks

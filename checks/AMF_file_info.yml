@@ -11,4 +11,5 @@ checks:
   check_level: HIGH
   check_name: checklib.register.file_checks_register.FileNameStructureCheck
   parameters: {delimiter: _, extension: .nc}
+description: Check 'file_info' in AMF files
 suite_name: file_info_checks

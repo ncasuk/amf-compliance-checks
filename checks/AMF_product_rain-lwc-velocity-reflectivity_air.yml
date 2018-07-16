@@ -6,4 +6,5 @@ checks:
 - {__INCLUDE__: AMF_product_common_variable_air.yml}
 - {__INCLUDE__: AMF_product_rain-lwc-velocity-reflectivity_dimension.yml}
 - {__INCLUDE__: AMF_product_rain-lwc-velocity-reflectivity_variable.yml}
+description: Check 'product rain-lwc-velocity-reflectivity air' in AMF files
 suite_name: product_rain-lwc-velocity-reflectivity_air_checks

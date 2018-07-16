@@ -5,4 +5,5 @@ checks:
 - {__INCLUDE__: AMF_product_common_dimension_land.yml}
 - {__INCLUDE__: AMF_product_common_variable_land.yml}
 - {__INCLUDE__: AMF_product_halocarbon-concentration_variable.yml}
+description: Check 'product halocarbon-concentration land' in AMF files
 suite_name: product_halocarbon-concentration_land_checks

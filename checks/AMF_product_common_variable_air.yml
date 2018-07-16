@@ -138,4 +138,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'year'
   parameters: {dtype: int32, var_id: year, vocabulary_ref: 'ncas:amf'}
+description: Check 'product common variable air' in AMF files
 suite_name: product_common_variable_air_checks

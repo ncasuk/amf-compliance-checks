@@ -134,4 +134,5 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_precipitation'
   parameters: {dtype: byte, var_id: qc_flag_precipitation, vocabulary_ref: 'ncas:amf'}
+description: Check 'product surface-met variable' in AMF files
 suite_name: product_surface-met_variable_checks
