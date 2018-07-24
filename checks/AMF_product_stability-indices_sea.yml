@@ -1,0 +1,9 @@
+checks:
+- {__INCLUDE__: AMF_file_info.yml}
+- {__INCLUDE__: AMF_file_structure.yml}
+- {__INCLUDE__: AMF_global_attrs.yml}
+- {__INCLUDE__: AMF_product_common_dimension_sea.yml}
+- {__INCLUDE__: AMF_product_common_variable_sea.yml}
+- {__INCLUDE__: AMF_product_stability-indices_variable.yml}
+description: Check 'product stability-indices sea' in AMF files
+suite_name: product_stability-indices_sea_checks

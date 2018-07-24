@@ -37,7 +37,7 @@ checks:
   parameters: {attribute: calibration_sensitivity, regex: '.{5,}'}
 - check_id: check_calibration_certification_date_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: calibration_certification_date, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.*'}
+  parameters: {attribute: calibration_certification_date, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?'}
 - check_id: check_calibration_certification_url_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: calibration_certification_url, regex: 'https?://[^\s]+\.[^\s]*[^\s\.](/[^\s]+)?'}
@@ -55,7 +55,7 @@ checks:
   parameters: {attribute: processing_level, regex: '-?\d+'}
 - check_id: check_last_revised_date_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: last_revised_date, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.*'}
+  parameters: {attribute: last_revised_date, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?'}
 - check_id: check_project_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: project, regex: '.{3,}'}
@@ -81,10 +81,10 @@ checks:
   parameters: {attribute: title, regex: '.{10,}'}
 - check_id: check_time_coverage_start_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: time_coverage_start, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.*'}
+  parameters: {attribute: time_coverage_start, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?'}
 - check_id: check_time_coverage_end_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: time_coverage_end, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.*'}
+  parameters: {attribute: time_coverage_end, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?'}
 - check_id: check_platform_altitude_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: platform_altitude, regex: '-?\d+(\.\d+)? m'}
