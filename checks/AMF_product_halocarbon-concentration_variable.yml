@@ -147,5 +147,23 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_chcl3'
   parameters: {dtype: byte, var_id: qc_flag_chcl3, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ch3i_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_ch3i'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: qc_flag_ch3i,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ch3i_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_ch3i'
+  parameters: {dtype: byte, var_id: qc_flag_ch3i, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ch2brcl_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_ch2brcl'
+  parameters: {pyessv_namespace: product_halocarbon-concentration_variable, var_id: qc_flag_ch2brcl,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_ch2brcl_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_ch2brcl'
+  parameters: {dtype: byte, var_id: qc_flag_ch2brcl, vocabulary_ref: 'ncas:amf'}
 description: Check 'product halocarbon-concentration variable' in AMF files
 suite_name: product_halocarbon-concentration_variable_checks

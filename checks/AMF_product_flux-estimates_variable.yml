@@ -7,7 +7,7 @@ checks:
 - check_id: check_start_of_run_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'start_of_run'
-  parameters: {dtype: float32, var_id: start_of_run, vocabulary_ref: 'ncas:amf'}
+  parameters: {dtype: float64, var_id: start_of_run, vocabulary_ref: 'ncas:amf'}
 - check_id: check_run_length_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'run_length'
@@ -152,5 +152,86 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_kurtosis_v'
   parameters: {dtype: byte, var_id: qc_flag_kurtosis_v, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_kurtosis_w_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_kurtosis_w'
+  parameters: {pyessv_namespace: product_flux-estimates_variable, var_id: qc_flag_kurtosis_w,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_kurtosis_w_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_kurtosis_w'
+  parameters: {dtype: byte, var_id: qc_flag_kurtosis_w, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_kurtosis_ts_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_kurtosis_ts'
+  parameters: {pyessv_namespace: product_flux-estimates_variable, var_id: qc_flag_kurtosis_ts,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_kurtosis_ts_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_kurtosis_ts'
+  parameters: {dtype: byte, var_id: qc_flag_kurtosis_ts, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_sstclass_wu_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_sstclass_wu'
+  parameters: {pyessv_namespace: product_flux-estimates_variable, var_id: qc_flag_sstclass_wu,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_sstclass_wu_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_sstclass_wu'
+  parameters: {dtype: byte, var_id: qc_flag_sstclass_wu, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_sstclass_wv_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_sstclass_wv'
+  parameters: {pyessv_namespace: product_flux-estimates_variable, var_id: qc_flag_sstclass_wv,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_sstclass_wv_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_sstclass_wv'
+  parameters: {dtype: byte, var_id: qc_flag_sstclass_wv, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_sstclass_wts_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_sstclass_wts'
+  parameters: {pyessv_namespace: product_flux-estimates_variable, var_id: qc_flag_sstclass_wts,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_sstclass_wts_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_sstclass_wts'
+  parameters: {dtype: byte, var_id: qc_flag_sstclass_wts, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_quality_wu_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_quality_wu'
+  parameters: {pyessv_namespace: product_flux-estimates_variable, var_id: qc_flag_quality_wu,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_quality_wu_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_quality_wu'
+  parameters: {dtype: byte, var_id: qc_flag_quality_wu, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_quality_wv_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_quality_wv'
+  parameters: {pyessv_namespace: product_flux-estimates_variable, var_id: qc_flag_quality_wv,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_quality_wv_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_quality_wv'
+  parameters: {dtype: byte, var_id: qc_flag_quality_wv, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_quality_wts_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_quality_wts'
+  parameters: {pyessv_namespace: product_flux-estimates_variable, var_id: qc_flag_quality_wts,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_quality_wts_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_quality_wts'
+  parameters: {dtype: byte, var_id: qc_flag_quality_wts, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_quality_itc_class_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_quality_itc_class'
+  parameters: {pyessv_namespace: product_flux-estimates_variable, var_id: qc_flag_quality_itc_class,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_quality_itc_class_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_quality_itc_class'
+  parameters: {dtype: byte, var_id: qc_flag_quality_itc_class, vocabulary_ref: 'ncas:amf'}
 description: Check 'product flux-estimates variable' in AMF files
 suite_name: product_flux-estimates_variable_checks

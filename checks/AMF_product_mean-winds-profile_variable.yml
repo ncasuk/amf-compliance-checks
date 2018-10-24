@@ -1,0 +1,39 @@
+checks:
+- check_id: check_altitude_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'altitude'
+  parameters: {pyessv_namespace: product_mean-winds-profile_variable, var_id: altitude,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_altitude_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'altitude'
+  parameters: {dtype: float32, var_id: altitude, vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_speed_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'wind_speed'
+  parameters: {pyessv_namespace: product_mean-winds-profile_variable, var_id: wind_speed,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_speed_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'wind_speed'
+  parameters: {dtype: float32, var_id: wind_speed, vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_from_direction_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'wind_from_direction'
+  parameters: {pyessv_namespace: product_mean-winds-profile_variable, var_id: wind_from_direction,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_wind_from_direction_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'wind_from_direction'
+  parameters: {dtype: float32, var_id: wind_from_direction, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag'
+  parameters: {pyessv_namespace: product_mean-winds-profile_variable, var_id: qc_flag,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag'
+  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+description: Check 'product mean-winds-profile variable' in AMF files
+suite_name: product_mean-winds-profile_variable_checks

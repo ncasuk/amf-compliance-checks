@@ -1,0 +1,68 @@
+checks:
+- check_id: check_range_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'range'
+  parameters: {pyessv_namespace: product_depolarisation-ratio_variable, var_id: range,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_range_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'range'
+  parameters: {dtype: float32, var_id: range, vocabulary_ref: 'ncas:amf'}
+- check_id: check_sensor_azimuth_angle_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'sensor_azimuth_angle'
+  parameters: {pyessv_namespace: product_depolarisation-ratio_variable, var_id: sensor_azimuth_angle,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_sensor_azimuth_angle_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'sensor_azimuth_angle'
+  parameters: {dtype: float32, var_id: sensor_azimuth_angle, vocabulary_ref: 'ncas:amf'}
+- check_id: check_sensor_view_angle_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'sensor_view_angle'
+  parameters: {pyessv_namespace: product_depolarisation-ratio_variable, var_id: sensor_view_angle,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_sensor_view_angle_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'sensor_view_angle'
+  parameters: {dtype: float32, var_id: sensor_view_angle, vocabulary_ref: 'ncas:amf'}
+- check_id: check_attenuated_aerosol_backscatter_coefficient_co_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'attenuated_aerosol_backscatter_coefficient_co'
+  parameters: {pyessv_namespace: product_depolarisation-ratio_variable, var_id: attenuated_aerosol_backscatter_coefficient_co,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_attenuated_aerosol_backscatter_coefficient_co_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'attenuated_aerosol_backscatter_coefficient_co'
+  parameters: {dtype: float32, var_id: attenuated_aerosol_backscatter_coefficient_co,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_attenuated_aerosol_backscatter_coefficient_cr_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'attenuated_aerosol_backscatter_coefficient_cr'
+  parameters: {pyessv_namespace: product_depolarisation-ratio_variable, var_id: attenuated_aerosol_backscatter_coefficient_cr,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_attenuated_aerosol_backscatter_coefficient_cr_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'attenuated_aerosol_backscatter_coefficient_cr'
+  parameters: {dtype: float32, var_id: attenuated_aerosol_backscatter_coefficient_cr,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_depolarisation_ratio_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'depolarisation_ratio'
+  parameters: {pyessv_namespace: product_depolarisation-ratio_variable, var_id: depolarisation_ratio,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_depolarisation_ratio_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'depolarisation_ratio'
+  parameters: {dtype: float32, var_id: depolarisation_ratio, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag'
+  parameters: {pyessv_namespace: product_depolarisation-ratio_variable, var_id: qc_flag,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag'
+  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+description: Check 'product depolarisation-ratio variable' in AMF files
+suite_name: product_depolarisation-ratio_variable_checks

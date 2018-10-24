@@ -37,10 +37,14 @@ checks:
   parameters: {attribute: calibration_sensitivity, regex: '.{5,}'}
 - check_id: check_calibration_certification_date_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: calibration_certification_date, regex: '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?'}
+  parameters: {attribute: calibration_certification_date, regex: '(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?)|(N/A)|(NA)|(N
+      A)|(n/a)|(na)|(n a)|(Not Applicable)|(Not applicable)|(Not available)|(Not Available)|(not
+      applicable)|(not available)'}
 - check_id: check_calibration_certification_url_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: calibration_certification_url, regex: 'https?://[^\s]+\.[^\s]*[^\s\.](/[^\s]+)?'}
+  parameters: {attribute: calibration_certification_url, regex: '(https?://[^\s]+\.[^\s]*[^\s\.](/[^\s]+))|(N/A)|(NA)|(N
+      A)|(n/a)|(na)|(n a)|(Not Applicable)|(Not applicable)|(Not available)|(Not Available)|(not
+      applicable)|(not available)'}
 - check_id: check_sampling_interval_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: sampling_interval, regex: '.{2,}'}
@@ -96,7 +100,7 @@ checks:
   parameters: {attribute: amf_vocabularies_release, regex: 'https?://[^\s]+\.[^\s]*[^\s\.](/[^\s]+)?'}
 - check_id: check_history_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
-  parameters: {attribute: history, regex: '.{10,}'}
+  parameters: {attribute: history, regex: '.{1,}'}
 - check_id: check_comment_global_attribute
   check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
   parameters: {attribute: comment, regex: '.{4,}'}

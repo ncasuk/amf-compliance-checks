@@ -2,7 +2,7 @@ checks:
 - check_id: check_index_dimension_attrs
   check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
   comments: Checks the dimension attributes for 'index'
-  parameters: {dim_id: index, pyessv_namespace: product_flux-components_dimension,
+  parameters: {dim_id: index, ignore_coord_var_checks: true, pyessv_namespace: product_flux-components_dimension,
     vocabulary_ref: 'ncas:amf'}
 description: Check 'product flux-components dimension' in AMF files
 suite_name: product_flux-components_dimension_checks

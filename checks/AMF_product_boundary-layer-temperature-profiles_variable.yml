@@ -112,6 +112,10 @@ checks:
   comments: Checks the variable attributes for 'qc_flag_channel_7_failure'
   parameters: {pyessv_namespace: product_boundary-layer-temperature-profiles_variable,
     var_id: qc_flag_channel_7_failure, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_channel_7_failure_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_channel_7_failure'
+  parameters: {dtype: int32, var_id: qc_flag_channel_7_failure, vocabulary_ref: 'ncas:amf'}
 - check_id: check_qc_flag_channel_8_failure_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_channel_8_failure'
@@ -175,5 +179,23 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_channel_14_failure'
   parameters: {dtype: byte, var_id: qc_flag_channel_14_failure, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_t_receiver_temperature_stability_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_t_receiver_temperature_stability'
+  parameters: {pyessv_namespace: product_boundary-layer-temperature-profiles_variable,
+    var_id: qc_flag_t_receiver_temperature_stability, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_t_receiver_temperature_stability_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_t_receiver_temperature_stability'
+  parameters: {dtype: byte, var_id: qc_flag_t_receiver_temperature_stability, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_rh_receiver_temperature_stability_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_rh_receiver_temperature_stability'
+  parameters: {pyessv_namespace: product_boundary-layer-temperature-profiles_variable,
+    var_id: qc_flag_rh_receiver_temperature_stability, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_rh_receiver_temperature_stability_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_rh_receiver_temperature_stability'
+  parameters: {dtype: byte, var_id: qc_flag_rh_receiver_temperature_stability, vocabulary_ref: 'ncas:amf'}
 description: Check 'product boundary-layer-temperature-profiles variable' in AMF files
 suite_name: product_boundary-layer-temperature-profiles_variable_checks

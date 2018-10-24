@@ -146,5 +146,83 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'day'
   parameters: {dtype: int32, var_id: day, vocabulary_ref: 'ncas:amf'}
+- check_id: check_hour_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'hour'
+  parameters: {pyessv_namespace: product_common_variable_sea, var_id: hour, vocabulary_ref: 'ncas:amf'}
+- check_id: check_hour_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'hour'
+  parameters: {dtype: int32, var_id: hour, vocabulary_ref: 'ncas:amf'}
+- check_id: check_minute_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'minute'
+  parameters: {pyessv_namespace: product_common_variable_sea, var_id: minute, vocabulary_ref: 'ncas:amf'}
+- check_id: check_minute_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'minute'
+  parameters: {dtype: int32, var_id: minute, vocabulary_ref: 'ncas:amf'}
+- check_id: check_second_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'second'
+  parameters: {pyessv_namespace: product_common_variable_sea, var_id: second, vocabulary_ref: 'ncas:amf'}
+- check_id: check_second_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'second'
+  parameters: {dtype: float64, var_id: second, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_roll_angle_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_roll_angle'
+  parameters: {pyessv_namespace: product_common_variable_sea, var_id: qc_flag_roll_angle,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_roll_angle_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_roll_angle'
+  parameters: {dtype: byte, var_id: qc_flag_roll_angle, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_pitch_angle_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_pitch_angle'
+  parameters: {pyessv_namespace: product_common_variable_sea, var_id: qc_flag_pitch_angle,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_pitch_angle_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_pitch_angle'
+  parameters: {dtype: byte, var_id: qc_flag_pitch_angle, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_yaw_angle_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_yaw_angle'
+  parameters: {pyessv_namespace: product_common_variable_sea, var_id: qc_flag_yaw_angle,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_yaw_angle_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_yaw_angle'
+  parameters: {dtype: byte, var_id: qc_flag_yaw_angle, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_roll_rate_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_roll_rate'
+  parameters: {pyessv_namespace: product_common_variable_sea, var_id: qc_flag_roll_rate,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_roll_rate_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_roll_rate'
+  parameters: {dtype: byte, var_id: qc_flag_roll_rate, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_pitch_rate_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_pitch_rate'
+  parameters: {pyessv_namespace: product_common_variable_sea, var_id: qc_flag_pitch_rate,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_pitch_rate_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_pitch_rate'
+  parameters: {dtype: byte, var_id: qc_flag_pitch_rate, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_yaw_rate_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_yaw_rate'
+  parameters: {pyessv_namespace: product_common_variable_sea, var_id: qc_flag_yaw_rate,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_yaw_rate_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_yaw_rate'
+  parameters: {dtype: byte, var_id: qc_flag_yaw_rate, vocabulary_ref: 'ncas:amf'}
 description: Check 'product common variable sea' in AMF files
 suite_name: product_common_variable_sea_checks

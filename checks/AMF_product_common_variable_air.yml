@@ -138,5 +138,54 @@ checks:
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'year'
   parameters: {dtype: int32, var_id: year, vocabulary_ref: 'ncas:amf'}
+- check_id: check_month_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'month'
+  parameters: {pyessv_namespace: product_common_variable_air, var_id: month, vocabulary_ref: 'ncas:amf'}
+- check_id: check_month_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'month'
+  parameters: {dtype: int32, var_id: month, vocabulary_ref: 'ncas:amf'}
+- check_id: check_day_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'day'
+  parameters: {pyessv_namespace: product_common_variable_air, var_id: day, vocabulary_ref: 'ncas:amf'}
+- check_id: check_day_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'day'
+  parameters: {dtype: int32, var_id: day, vocabulary_ref: 'ncas:amf'}
+- check_id: check_hour_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'hour'
+  parameters: {pyessv_namespace: product_common_variable_air, var_id: hour, vocabulary_ref: 'ncas:amf'}
+- check_id: check_hour_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'hour'
+  parameters: {dtype: int32, var_id: hour, vocabulary_ref: 'ncas:amf'}
+- check_id: check_minute_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'minute'
+  parameters: {pyessv_namespace: product_common_variable_air, var_id: minute, vocabulary_ref: 'ncas:amf'}
+- check_id: check_minute_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'minute'
+  parameters: {dtype: int32, var_id: minute, vocabulary_ref: 'ncas:amf'}
+- check_id: check_second_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'second'
+  parameters: {pyessv_namespace: product_common_variable_air, var_id: second, vocabulary_ref: 'ncas:amf'}
+- check_id: check_second_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'second'
+  parameters: {dtype: float32, var_id: second, vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_stabilisation_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_stabilisation'
+  parameters: {pyessv_namespace: product_common_variable_air, var_id: qc_flag_stabilisation,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_stabilisation_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_stabilisation'
+  parameters: {dtype: byte, var_id: qc_flag_stabilisation, vocabulary_ref: 'ncas:amf'}
 description: Check 'product common variable air' in AMF files
 suite_name: product_common_variable_air_checks

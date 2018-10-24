@@ -1,0 +1,22 @@
+checks:
+- check_id: check_molecular_oxygen_molecular_nitrogen_ratio_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'molecular_oxygen_molecular_nitrogen_ratio_in_air'
+  parameters: {pyessv_namespace: product_o2n2-concentration-ratio_variable, var_id: molecular_oxygen_molecular_nitrogen_ratio_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_molecular_oxygen_molecular_nitrogen_ratio_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'molecular_oxygen_molecular_nitrogen_ratio_in_air'
+  parameters: {dtype: float32, var_id: molecular_oxygen_molecular_nitrogen_ratio_in_air,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag'
+  parameters: {pyessv_namespace: product_o2n2-concentration-ratio_variable, var_id: qc_flag,
+    vocabulary_ref: 'ncas:amf'}
+- check_id: check_qc_flag_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag'
+  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
+description: Check 'product o2n2-concentration-ratio variable' in AMF files
+suite_name: product_o2n2-concentration-ratio_variable_checks
