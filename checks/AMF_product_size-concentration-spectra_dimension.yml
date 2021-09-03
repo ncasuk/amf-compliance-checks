@@ -1,13 +1,23 @@
+suite_name: product_size-concentration-spectra_dimension_checks:v2.0
+
+description: Check 'product size-concentration-spectra dimension' in AMF files
+
 checks:
-- check_id: check_index_range_dimension_attrs
-  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
-  comments: Checks the dimension attributes for 'index_range'
-  parameters: {dim_id: index_range, ignore_coord_var_checks: true, pyessv_namespace: product_size-concentration-spectra_dimension,
-    vocabulary_ref: 'ncas:amf'}
+
 - check_id: check_index_bin_dimension_attrs
   check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
   comments: Checks the dimension attributes for 'index_bin'
-  parameters: {dim_id: index_bin, ignore_coord_var_checks: true, pyessv_namespace: product_size-concentration-spectra_dimension,
-    vocabulary_ref: 'ncas:amf'}
-description: Check 'product size-concentration-spectra dimension' in AMF files
-suite_name: product_size-concentration-spectra_dimension_checks
+  parameters:
+    dim_id: index_bin
+    ignore_coord_var_check: true
+    pyessv_namespace: product_size-concentration-spectra_dimension
+    vocabulary_ref: ncas:amf
+
+- check_id: check_altitude_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'altitude'
+  parameters:
+    dim_id: altitude
+    ignore_coord_var_check: false
+    pyessv_namespace: product_size-concentration-spectra_dimension
+    vocabulary_ref: ncas:amf

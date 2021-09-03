@@ -1,57 +1,101 @@
+suite_name: product_soil_variable_checks:v2.0
+
+description: Check 'product soil variable' in AMF files
+
 checks:
+
 - check_id: check_downward_heat_flux_in_soil_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'downward_heat_flux_in_soil'
-  parameters: {pyessv_namespace: product_soil_variable, var_id: downward_heat_flux_in_soil,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_soil_variable
+    var_id: downward_heat_flux_in_soil
+    vocabulary_ref: ncas:amf
+
 - check_id: check_downward_heat_flux_in_soil_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'downward_heat_flux_in_soil'
-  parameters: {dtype: float32, var_id: downward_heat_flux_in_soil, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: downward_heat_flux_in_soil
+    vocabulary_ref: ncas:amf
+
 - check_id: check_soil_temperature_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'soil_temperature'
-  parameters: {pyessv_namespace: product_soil_variable, var_id: soil_temperature,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_soil_variable
+    var_id: soil_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_soil_temperature_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'soil_temperature'
-  parameters: {dtype: float32, var_id: soil_temperature, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: soil_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_soil_water_potential_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'soil_water_potential'
-  parameters: {pyessv_namespace: product_soil_variable, var_id: soil_water_potential,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_soil_variable
+    var_id: soil_water_potential
+    vocabulary_ref: ncas:amf
+
 - check_id: check_soil_water_potential_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'soil_water_potential'
-  parameters: {dtype: float32, var_id: soil_water_potential, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: soil_water_potential
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_soil_heat_flux_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_soil_heat_flux'
-  parameters: {pyessv_namespace: product_soil_variable, var_id: qc_flag_soil_heat_flux,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_soil_variable
+    var_id: qc_flag_soil_heat_flux
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_soil_heat_flux_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_soil_heat_flux'
-  parameters: {dtype: byte, var_id: qc_flag_soil_heat_flux, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: byte
+    var_id: qc_flag_soil_heat_flux
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_soil_temperature_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_soil_temperature'
-  parameters: {pyessv_namespace: product_soil_variable, var_id: qc_flag_soil_temperature,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_soil_variable
+    var_id: qc_flag_soil_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_soil_temperature_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_soil_temperature'
-  parameters: {dtype: byte, var_id: qc_flag_soil_temperature, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: byte
+    var_id: qc_flag_soil_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_soil_water_potential_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_soil_water_potential'
-  parameters: {pyessv_namespace: product_soil_variable, var_id: qc_flag_soil_water_potential,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_soil_variable
+    var_id: qc_flag_soil_water_potential
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_soil_water_potential_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_soil_water_potential'
-  parameters: {dtype: byte, var_id: qc_flag_soil_water_potential, vocabulary_ref: 'ncas:amf'}
-description: Check 'product soil variable' in AMF files
-suite_name: product_soil_variable_checks
+  parameters:
+    dtype: byte
+    var_id: qc_flag_soil_water_potential
+    vocabulary_ref: ncas:amf

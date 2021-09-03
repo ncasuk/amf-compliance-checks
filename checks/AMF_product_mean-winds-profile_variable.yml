@@ -1,39 +1,229 @@
+suite_name: product_mean-winds-profile_variable_checks:v2.0
+
+description: Check 'product mean-winds-profile variable' in AMF files
+
 checks:
+
 - check_id: check_altitude_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'altitude'
-  parameters: {pyessv_namespace: product_mean-winds-profile_variable, var_id: altitude,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: altitude
+    vocabulary_ref: ncas:amf
+
 - check_id: check_altitude_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'altitude'
-  parameters: {dtype: float32, var_id: altitude, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: altitude
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wind_speed_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wind_speed'
-  parameters: {pyessv_namespace: product_mean-winds-profile_variable, var_id: wind_speed,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: wind_speed
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wind_speed_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wind_speed'
-  parameters: {dtype: float32, var_id: wind_speed, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wind_speed
+    vocabulary_ref: ncas:amf
+
+- check_id: check_wind_speed_of_gust_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'wind_speed_of_gust'
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: wind_speed_of_gust
+    vocabulary_ref: ncas:amf
+
+- check_id: check_wind_speed_of_gust_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'wind_speed_of_gust'
+  parameters:
+    dtype: float32
+    var_id: wind_speed_of_gust
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wind_from_direction_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wind_from_direction'
-  parameters: {pyessv_namespace: product_mean-winds-profile_variable, var_id: wind_from_direction,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: wind_from_direction
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wind_from_direction_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wind_from_direction'
-  parameters: {dtype: float32, var_id: wind_from_direction, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wind_from_direction
+    vocabulary_ref: ncas:amf
+
+- check_id: check_wind_speed_of_gust_from_direction_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'wind_speed_of_gust_from_direction'
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: wind_speed_of_gust_from_direction
+    vocabulary_ref: ncas:amf
+
+- check_id: check_wind_speed_of_gust_from_direction_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'wind_speed_of_gust_from_direction'
+  parameters:
+    dtype: float32
+    var_id: wind_speed_of_gust_from_direction
+    vocabulary_ref: ncas:amf
+
+- check_id: check_eastward_wind_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'eastward_wind'
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: eastward_wind
+    vocabulary_ref: ncas:amf
+
+- check_id: check_eastward_wind_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'eastward_wind'
+  parameters:
+    dtype: float32
+    var_id: eastward_wind
+    vocabulary_ref: ncas:amf
+
+- check_id: check_northward_wind_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'northward_wind'
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: northward_wind
+    vocabulary_ref: ncas:amf
+
+- check_id: check_northward_wind_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'northward_wind'
+  parameters:
+    dtype: float32
+    var_id: northward_wind
+    vocabulary_ref: ncas:amf
+
+- check_id: check_upward_air_velocity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'upward_air_velocity'
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: upward_air_velocity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_upward_air_velocity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'upward_air_velocity'
+  parameters:
+    dtype: float32
+    var_id: upward_air_velocity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_wind_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'divergence_of_wind'
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: divergence_of_wind
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_wind_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'divergence_of_wind'
+  parameters:
+    dtype: float32
+    var_id: divergence_of_wind
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_wind_from_direction_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'divergence_of_wind_from_direction'
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: divergence_of_wind_from_direction
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_wind_from_direction_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'divergence_of_wind_from_direction'
+  parameters:
+    dtype: float32
+    var_id: divergence_of_wind_from_direction
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_eastward_wind_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'divergence_of_eastward_wind'
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: divergence_of_eastward_wind
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_eastward_wind_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'divergence_of_eastward_wind'
+  parameters:
+    dtype: float32
+    var_id: divergence_of_eastward_wind
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_northward_wind_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'divergence_of_northward_wind'
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: divergence_of_northward_wind
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_northward_wind_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'divergence_of_northward_wind'
+  parameters:
+    dtype: float32
+    var_id: divergence_of_northward_wind
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_upward_air_velocity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'divergence_of_upward_air_velocity'
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: divergence_of_upward_air_velocity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_upward_air_velocity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'divergence_of_upward_air_velocity'
+  parameters:
+    dtype: float32
+    var_id: divergence_of_upward_air_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag'
-  parameters: {pyessv_namespace: product_mean-winds-profile_variable, var_id: qc_flag,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_mean-winds-profile_variable
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag'
-  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
-description: Check 'product mean-winds-profile variable' in AMF files
-suite_name: product_mean-winds-profile_variable_checks
+  parameters:
+    dtype: byte
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf

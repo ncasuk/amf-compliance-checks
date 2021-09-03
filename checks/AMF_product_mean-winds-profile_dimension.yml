@@ -1,8 +1,14 @@
-checks:
-- check_id: check_index_dimension_attrs
-  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
-  comments: Checks the dimension attributes for 'index'
-  parameters: {dim_id: index, ignore_coord_var_checks: true, pyessv_namespace: product_mean-winds-profile_dimension,
-    vocabulary_ref: 'ncas:amf'}
+suite_name: product_mean-winds-profile_dimension_checks:v2.0
+
 description: Check 'product mean-winds-profile dimension' in AMF files
-suite_name: product_mean-winds-profile_dimension_checks
+
+checks:
+
+- check_id: check_altitude_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'altitude'
+  parameters:
+    dim_id: altitude
+    ignore_coord_var_check: false
+    pyessv_namespace: product_mean-winds-profile_dimension
+    vocabulary_ref: ncas:amf

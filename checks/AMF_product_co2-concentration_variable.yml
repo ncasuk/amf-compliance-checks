@@ -1,21 +1,85 @@
+suite_name: product_co2-concentration_variable_checks:v2.0
+
+description: Check 'product co2-concentration variable' in AMF files
+
 checks:
+
 - check_id: check_mole_fraction_of_carbon_dioxide_in_air_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'mole_fraction_of_carbon_dioxide_in_air'
-  parameters: {pyessv_namespace: product_co2-concentration_variable, var_id: mole_fraction_of_carbon_dioxide_in_air,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_co2-concentration_variable
+    var_id: mole_fraction_of_carbon_dioxide_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_mole_fraction_of_carbon_dioxide_in_air_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'mole_fraction_of_carbon_dioxide_in_air'
-  parameters: {dtype: float32, var_id: mole_fraction_of_carbon_dioxide_in_air, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_carbon_dioxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_carbon_dioxide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_carbon_dioxide_in_air'
+  parameters:
+    pyessv_namespace: product_co2-concentration_variable
+    var_id: mass_fraction_of_carbon_dioxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_carbon_dioxide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_carbon_dioxide_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_carbon_dioxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_carbon_dioxide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_carbon_dioxide_in_air'
+  parameters:
+    pyessv_namespace: product_co2-concentration_variable
+    var_id: mole_concentration_of_carbon_dioxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_carbon_dioxide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_carbon_dioxide_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_carbon_dioxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_carbon_dioxide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_carbon_dioxide_in_air'
+  parameters:
+    pyessv_namespace: product_co2-concentration_variable
+    var_id: mass_concentration_of_carbon_dioxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_carbon_dioxide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_carbon_dioxide_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_carbon_dioxide_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag'
-  parameters: {pyessv_namespace: product_co2-concentration_variable, var_id: qc_flag,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_co2-concentration_variable
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag'
-  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
-description: Check 'product co2-concentration variable' in AMF files
-suite_name: product_co2-concentration_variable_checks
+  parameters:
+    dtype: byte
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf

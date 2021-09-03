@@ -1,15 +1,26 @@
+suite_name: file_info_checks:v2.0
+
+description: Check 'file_info' in AMF files
+
 checks:
+
 - check_id: check_soft_file_size_limit
   check_level: LOW
   check_name: checklib.register.file_checks_register.FileSizeCheck
-  parameters: {strictness: soft, threshold: 2}
+  parameters:
+    strictness: soft
+    threshold: 2
+
 - check_id: check_hard_file_size_limit
   check_level: HIGH
   check_name: checklib.register.file_checks_register.FileSizeCheck
-  parameters: {strictness: hard, threshold: 4}
+  parameters:
+    strictness: hard
+    threshold: 4
+
 - check_id: check_filename_structure
   check_level: HIGH
   check_name: checklib.register.file_checks_register.FileNameStructureCheck
-  parameters: {delimiter: _, extension: .nc}
-description: Check 'file_info' in AMF files
-suite_name: file_info_checks
+  parameters:
+    delimiter: _
+    extension: .nc

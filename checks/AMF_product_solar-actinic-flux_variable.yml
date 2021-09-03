@@ -1,30 +1,101 @@
+suite_name: product_solar-actinic-flux_variable_checks:v2.0
+
+description: Check 'product solar-actinic-flux variable' in AMF files
+
 checks:
+
 - check_id: check_solar_actinic_flux_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'solar_actinic_flux'
-  parameters: {pyessv_namespace: product_solar-actinic-flux_variable, var_id: solar_actinic_flux,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_solar-actinic-flux_variable
+    var_id: solar_actinic_flux
+    vocabulary_ref: ncas:amf
+
 - check_id: check_solar_actinic_flux_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'solar_actinic_flux'
-  parameters: {dtype: float32, var_id: solar_actinic_flux, vocabulary_ref: 'ncas:amf'}
-- check_id: check_photolysis_frquencies_variable_attrs
+  parameters:
+    dtype: float32
+    var_id: solar_actinic_flux
+    vocabulary_ref: ncas:amf
+
+- check_id: check_photolysis_frequencies_jno2_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
-  comments: Checks the variable attributes for 'photolysis_frquencies'
-  parameters: {pyessv_namespace: product_solar-actinic-flux_variable, var_id: photolysis_frquencies,
-    vocabulary_ref: 'ncas:amf'}
-- check_id: check_photolysis_frquencies_variable_type
+  comments: Checks the variable attributes for 'photolysis_frequencies_jno2'
+  parameters:
+    pyessv_namespace: product_solar-actinic-flux_variable
+    var_id: photolysis_frequencies_jno2
+    vocabulary_ref: ncas:amf
+
+- check_id: check_photolysis_frequencies_jno2_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
-  comments: Checks the type of variable 'photolysis_frquencies'
-  parameters: {dtype: float32, var_id: photolysis_frquencies, vocabulary_ref: 'ncas:amf'}
+  comments: Checks the type of variable 'photolysis_frequencies_jno2'
+  parameters:
+    dtype: float32
+    var_id: photolysis_frequencies_jno2
+    vocabulary_ref: ncas:amf
+
+- check_id: check_photolysis_frequencies_jo1d_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'photolysis_frequencies_jo1d'
+  parameters:
+    pyessv_namespace: product_solar-actinic-flux_variable
+    var_id: photolysis_frequencies_jo1d
+    vocabulary_ref: ncas:amf
+
+- check_id: check_photolysis_frequencies_jo1d_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'photolysis_frequencies_jo1d'
+  parameters:
+    dtype: float32
+    var_id: photolysis_frequencies_jo1d
+    vocabulary_ref: ncas:amf
+
+- check_id: check_photolysis_frequencies_jhcho_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'photolysis_frequencies_jhcho'
+  parameters:
+    pyessv_namespace: product_solar-actinic-flux_variable
+    var_id: photolysis_frequencies_jhcho
+    vocabulary_ref: ncas:amf
+
+- check_id: check_photolysis_frequencies_jhcho_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'photolysis_frequencies_jhcho'
+  parameters:
+    dtype: float32
+    var_id: photolysis_frequencies_jhcho
+    vocabulary_ref: ncas:amf
+
+- check_id: check_photolysis_frequencies_jhono_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'photolysis_frequencies_jhono'
+  parameters:
+    pyessv_namespace: product_solar-actinic-flux_variable
+    var_id: photolysis_frequencies_jhono
+    vocabulary_ref: ncas:amf
+
+- check_id: check_photolysis_frequencies_jhono_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'photolysis_frequencies_jhono'
+  parameters:
+    dtype: float32
+    var_id: photolysis_frequencies_jhono
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag'
-  parameters: {pyessv_namespace: product_solar-actinic-flux_variable, var_id: qc_flag,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_solar-actinic-flux_variable
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag'
-  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
-description: Check 'product solar-actinic-flux variable' in AMF files
-suite_name: product_solar-actinic-flux_variable_checks
+  parameters:
+    dtype: byte
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf

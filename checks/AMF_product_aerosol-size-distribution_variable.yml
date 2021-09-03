@@ -1,30 +1,197 @@
+suite_name: product_aerosol-size-distribution_variable_checks:v2.0
+
+description: Check 'product aerosol-size-distribution variable' in AMF files
+
 checks:
+
 - check_id: check_ambient_aerosol_particle_diameter_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'ambient_aerosol_particle_diameter'
-  parameters: {pyessv_namespace: product_aerosol-size-distribution_variable, var_id: ambient_aerosol_particle_diameter,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: ambient_aerosol_particle_diameter
+    vocabulary_ref: ncas:amf
+
 - check_id: check_ambient_aerosol_particle_diameter_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'ambient_aerosol_particle_diameter'
-  parameters: {dtype: float32, var_id: ambient_aerosol_particle_diameter, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: ambient_aerosol_particle_diameter
+    vocabulary_ref: ncas:amf
+
+- check_id: check_measurement_channel_lower_limit_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'measurement_channel_lower_limit'
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: measurement_channel_lower_limit
+    vocabulary_ref: ncas:amf
+
+- check_id: check_measurement_channel_lower_limit_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'measurement_channel_lower_limit'
+  parameters:
+    dtype: float32
+    var_id: measurement_channel_lower_limit
+    vocabulary_ref: ncas:amf
+
+- check_id: check_measurement_channel_upper_limit_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'measurement_channel_upper_limit'
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: measurement_channel_upper_limit
+    vocabulary_ref: ncas:amf
+
+- check_id: check_measurement_channel_upper_limit_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'measurement_channel_upper_limit'
+  parameters:
+    dtype: float32
+    var_id: measurement_channel_upper_limit
+    vocabulary_ref: ncas:amf
+
+- check_id: check_ambient_aerosol_number_per_channel_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'ambient_aerosol_number_per_channel'
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: ambient_aerosol_number_per_channel
+    vocabulary_ref: ncas:amf
+
+- check_id: check_ambient_aerosol_number_per_channel_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'ambient_aerosol_number_per_channel'
+  parameters:
+    dtype: float32
+    var_id: ambient_aerosol_number_per_channel
+    vocabulary_ref: ncas:amf
+
 - check_id: check_ambient_aerosol_size_distribution_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'ambient_aerosol_size_distribution'
-  parameters: {pyessv_namespace: product_aerosol-size-distribution_variable, var_id: ambient_aerosol_size_distribution,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: ambient_aerosol_size_distribution
+    vocabulary_ref: ncas:amf
+
 - check_id: check_ambient_aerosol_size_distribution_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'ambient_aerosol_size_distribution'
-  parameters: {dtype: float32, var_id: ambient_aerosol_size_distribution, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: ambient_aerosol_size_distribution
+    vocabulary_ref: ncas:amf
+
+- check_id: check_ambient_aerosol_size_log_distribution_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'ambient_aerosol_size_log_distribution'
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: ambient_aerosol_size_log_distribution
+    vocabulary_ref: ncas:amf
+
+- check_id: check_ambient_aerosol_size_log_distribution_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'ambient_aerosol_size_log_distribution'
+  parameters:
+    dtype: float32
+    var_id: ambient_aerosol_size_log_distribution
+    vocabulary_ref: ncas:amf
+
+- check_id: check_total_number_concentration_of_ambient_aerosol_particles_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'total_number_concentration_of_ambient_aerosol_particles_in_air'
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: total_number_concentration_of_ambient_aerosol_particles_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_total_number_concentration_of_ambient_aerosol_particles_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'total_number_concentration_of_ambient_aerosol_particles_in_air'
+  parameters:
+    dtype: float32
+    var_id: total_number_concentration_of_ambient_aerosol_particles_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sample_pressure_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'sample_pressure'
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: sample_pressure
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sample_pressure_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'sample_pressure'
+  parameters:
+    dtype: float32
+    var_id: sample_pressure
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sample_temperature_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'sample_temperature'
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: sample_temperature
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sample_temperature_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'sample_temperature'
+  parameters:
+    dtype: float32
+    var_id: sample_temperature
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sample_mean_free_path_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'sample_mean_free_path'
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: sample_mean_free_path
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sample_mean_free_path_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'sample_mean_free_path'
+  parameters:
+    dtype: float32
+    var_id: sample_mean_free_path
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sample_gas_viscosity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'sample_gas_viscosity'
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: sample_gas_viscosity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sample_gas_viscosity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'sample_gas_viscosity'
+  parameters:
+    dtype: float32
+    var_id: sample_gas_viscosity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag'
-  parameters: {pyessv_namespace: product_aerosol-size-distribution_variable, var_id: qc_flag,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_aerosol-size-distribution_variable
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag'
-  parameters: {dtype: byte, var_id: qc_flag, vocabulary_ref: 'ncas:amf'}
-description: Check 'product aerosol-size-distribution variable' in AMF files
-suite_name: product_aerosol-size-distribution_variable_checks
+  parameters:
+    dtype: byte
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf

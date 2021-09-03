@@ -1,138 +1,357 @@
+suite_name: product_surface-met_variable_checks:v2.0
+
+description: Check 'product surface-met variable' in AMF files
+
 checks:
+
 - check_id: check_air_pressure_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'air_pressure'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: air_pressure,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: air_pressure
+    vocabulary_ref: ncas:amf
+
 - check_id: check_air_pressure_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'air_pressure'
-  parameters: {dtype: float32, var_id: air_pressure, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: air_pressure
+    vocabulary_ref: ncas:amf
+
 - check_id: check_air_temperature_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'air_temperature'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: air_temperature,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: air_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_air_temperature_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'air_temperature'
-  parameters: {dtype: float32, var_id: air_temperature, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: air_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_relative_humidity_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'relative_humidity'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: relative_humidity,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: relative_humidity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_relative_humidity_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'relative_humidity'
-  parameters: {dtype: float32, var_id: relative_humidity, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: relative_humidity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wind_speed_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wind_speed'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: wind_speed,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: wind_speed
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wind_speed_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wind_speed'
-  parameters: {dtype: float32, var_id: wind_speed, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wind_speed
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wind_from_direction_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wind_from_direction'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: wind_from_direction,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: wind_from_direction
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wind_from_direction_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wind_from_direction'
-  parameters: {dtype: float32, var_id: wind_from_direction, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wind_from_direction
+    vocabulary_ref: ncas:amf
+
 - check_id: check_thickness_of_rainfall_amount_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'thickness_of_rainfall_amount'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: thickness_of_rainfall_amount,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: thickness_of_rainfall_amount
+    vocabulary_ref: ncas:amf
+
 - check_id: check_thickness_of_rainfall_amount_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'thickness_of_rainfall_amount'
-  parameters: {dtype: float32, var_id: thickness_of_rainfall_amount, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: thickness_of_rainfall_amount
+    vocabulary_ref: ncas:amf
+
 - check_id: check_rainfall_rate_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'rainfall_rate'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: rainfall_rate,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: rainfall_rate
+    vocabulary_ref: ncas:amf
+
 - check_id: check_rainfall_rate_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'rainfall_rate'
-  parameters: {dtype: float32, var_id: rainfall_rate, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: rainfall_rate
+    vocabulary_ref: ncas:amf
+
+- check_id: check_hail_intensity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'hail_intensity'
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: hail_intensity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_hail_intensity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'hail_intensity'
+  parameters:
+    dtype: float32
+    var_id: hail_intensity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_hail_rate_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'hail_rate'
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: hail_rate
+    vocabulary_ref: ncas:amf
+
+- check_id: check_hail_rate_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'hail_rate'
+  parameters:
+    dtype: float32
+    var_id: hail_rate
+    vocabulary_ref: ncas:amf
+
 - check_id: check_downwelling_longwave_flux_in_air_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'downwelling_longwave_flux_in_air'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: downwelling_longwave_flux_in_air,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: downwelling_longwave_flux_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_downwelling_longwave_flux_in_air_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'downwelling_longwave_flux_in_air'
-  parameters: {dtype: float32, var_id: downwelling_longwave_flux_in_air, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: downwelling_longwave_flux_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_downwelling_shortwave_flux_in_air_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'downwelling_shortwave_flux_in_air'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: downwelling_shortwave_flux_in_air,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: downwelling_shortwave_flux_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_downwelling_shortwave_flux_in_air_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'downwelling_shortwave_flux_in_air'
-  parameters: {dtype: float32, var_id: downwelling_shortwave_flux_in_air, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: downwelling_shortwave_flux_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_downwelling_total_irradiance_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'downwelling_total_irradiance'
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: downwelling_total_irradiance
+    vocabulary_ref: ncas:amf
+
+- check_id: check_downwelling_total_irradiance_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'downwelling_total_irradiance'
+  parameters:
+    dtype: float32
+    var_id: downwelling_total_irradiance
+    vocabulary_ref: ncas:amf
+
+- check_id: check_net_total_irradiance_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'net_total_irradiance'
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: net_total_irradiance
+    vocabulary_ref: ncas:amf
+
+- check_id: check_net_total_irradiance_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'net_total_irradiance'
+  parameters:
+    dtype: float32
+    var_id: net_total_irradiance
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_temperature_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_temperature'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: qc_flag_temperature,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: qc_flag_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_temperature_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_temperature'
-  parameters: {dtype: byte, var_id: qc_flag_temperature, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: byte
+    var_id: qc_flag_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_relative_humidity_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_relative_humidity'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: qc_flag_relative_humidity,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: qc_flag_relative_humidity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_relative_humidity_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_relative_humidity'
-  parameters: {dtype: byte, var_id: qc_flag_relative_humidity, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: byte
+    var_id: qc_flag_relative_humidity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_pressure_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_pressure'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: qc_flag_pressure,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: qc_flag_pressure
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_pressure_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_pressure'
-  parameters: {dtype: byte, var_id: qc_flag_pressure, vocabulary_ref: 'ncas:amf'}
-- check_id: check_qc_flag_wind_variable_attrs
+  parameters:
+    dtype: byte
+    var_id: qc_flag_pressure
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_wind_speed_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
-  comments: Checks the variable attributes for 'qc_flag_wind'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: qc_flag_wind,
-    vocabulary_ref: 'ncas:amf'}
-- check_id: check_qc_flag_wind_variable_type
+  comments: Checks the variable attributes for 'qc_flag_wind_speed'
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: qc_flag_wind_speed
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_wind_speed_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
-  comments: Checks the type of variable 'qc_flag_wind'
-  parameters: {dtype: byte, var_id: qc_flag_wind, vocabulary_ref: 'ncas:amf'}
+  comments: Checks the type of variable 'qc_flag_wind_speed'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_wind_speed
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_wind_from_direction_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_wind_from_direction'
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: qc_flag_wind_from_direction
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_wind_from_direction_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_wind_from_direction'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_wind_from_direction
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_radiation_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_radiation'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: qc_flag_radiation,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: qc_flag_radiation
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_radiation_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_radiation'
-  parameters: {dtype: byte, var_id: qc_flag_radiation, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: byte
+    var_id: qc_flag_radiation
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_precipitation_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_precipitation'
-  parameters: {pyessv_namespace: product_surface-met_variable, var_id: qc_flag_precipitation,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: qc_flag_precipitation
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_precipitation_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_precipitation'
-  parameters: {dtype: byte, var_id: qc_flag_precipitation, vocabulary_ref: 'ncas:amf'}
-description: Check 'product surface-met variable' in AMF files
-suite_name: product_surface-met_variable_checks
+  parameters:
+    dtype: byte
+    var_id: qc_flag_precipitation
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_downwelling_total_irradiance_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_downwelling_total_irradiance'
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: qc_flag_downwelling_total_irradiance
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_downwelling_total_irradiance_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_downwelling_total_irradiance'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_downwelling_total_irradiance
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_net_total_irradiance_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_net_total_irradiance'
+  parameters:
+    pyessv_namespace: product_surface-met_variable
+    var_id: qc_flag_net_total_irradiance
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_net_total_irradiance_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_net_total_irradiance'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_net_total_irradiance
+    vocabulary_ref: ncas:amf
