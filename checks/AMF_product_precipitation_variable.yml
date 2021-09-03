@@ -1,0 +1,245 @@
+suite_name: product_precipitation_variable_checks:v2.0
+
+description: Check 'product precipitation variable' in AMF files
+
+checks:
+
+- check_id: check_diameter_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'diameter'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: diameter
+    vocabulary_ref: ncas:amf
+
+- check_id: check_diameter_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'diameter'
+  parameters:
+    dtype: float32
+    var_id: diameter
+    vocabulary_ref: ncas:amf
+
+- check_id: check_fallspeed_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'fallspeed'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: fallspeed
+    vocabulary_ref: ncas:amf
+
+- check_id: check_fallspeed_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'fallspeed'
+  parameters:
+    dtype: float32
+    var_id: fallspeed
+    vocabulary_ref: ncas:amf
+
+- check_id: check_number_of_hydrometeors_per_fallspeed_channel_per_size_channel_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'number_of_hydrometeors_per_fallspeed_channel_per_size_channel'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: number_of_hydrometeors_per_fallspeed_channel_per_size_channel
+    vocabulary_ref: ncas:amf
+
+- check_id: check_number_of_hydrometeors_per_fallspeed_channel_per_size_channel_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'number_of_hydrometeors_per_fallspeed_channel_per_size_channel'
+  parameters:
+    dtype: float32
+    var_id: number_of_hydrometeors_per_fallspeed_channel_per_size_channel
+    vocabulary_ref: ncas:amf
+
+- check_id: check_number_of_hydrometeor_per_size_channel_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'number_of_hydrometeor_per_size_channel'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: number_of_hydrometeor_per_size_channel
+    vocabulary_ref: ncas:amf
+
+- check_id: check_number_of_hydrometeor_per_size_channel_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'number_of_hydrometeor_per_size_channel'
+  parameters:
+    dtype: float32
+    var_id: number_of_hydrometeor_per_size_channel
+    vocabulary_ref: ncas:amf
+
+- check_id: check_thickness_of_rainfall_amount_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'thickness_of_rainfall_amount'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: thickness_of_rainfall_amount
+    vocabulary_ref: ncas:amf
+
+- check_id: check_thickness_of_rainfall_amount_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'thickness_of_rainfall_amount'
+  parameters:
+    dtype: float32
+    var_id: thickness_of_rainfall_amount
+    vocabulary_ref: ncas:amf
+
+- check_id: check_rainfall_rate_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'rainfall_rate'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: rainfall_rate
+    vocabulary_ref: ncas:amf
+
+- check_id: check_rainfall_rate_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'rainfall_rate'
+  parameters:
+    dtype: float32
+    var_id: rainfall_rate
+    vocabulary_ref: ncas:amf
+
+- check_id: check_total_precipitation_rate_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'total_precipitation_rate'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: total_precipitation_rate
+    vocabulary_ref: ncas:amf
+
+- check_id: check_total_precipitation_rate_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'total_precipitation_rate'
+  parameters:
+    dtype: float32
+    var_id: total_precipitation_rate
+    vocabulary_ref: ncas:amf
+
+- check_id: check_solid_precipitation_rate_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'solid_precipitation_rate'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: solid_precipitation_rate
+    vocabulary_ref: ncas:amf
+
+- check_id: check_solid_precipitation_rate_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'solid_precipitation_rate'
+  parameters:
+    dtype: float32
+    var_id: solid_precipitation_rate
+    vocabulary_ref: ncas:amf
+
+- check_id: check_hail_intensity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'hail_intensity'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: hail_intensity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_hail_intensity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'hail_intensity'
+  parameters:
+    dtype: float32
+    var_id: hail_intensity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_hail_rate_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'hail_rate'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: hail_rate
+    vocabulary_ref: ncas:amf
+
+- check_id: check_hail_rate_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'hail_rate'
+  parameters:
+    dtype: float32
+    var_id: hail_rate
+    vocabulary_ref: ncas:amf
+
+- check_id: check_maximum_diameter_of_hail_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'maximum_diameter_of_hail'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: maximum_diameter_of_hail
+    vocabulary_ref: ncas:amf
+
+- check_id: check_maximum_diameter_of_hail_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'maximum_diameter_of_hail'
+  parameters:
+    dtype: float32
+    var_id: maximum_diameter_of_hail
+    vocabulary_ref: ncas:amf
+
+- check_id: check_number_of_drops_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'number_of_drops'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: number_of_drops
+    vocabulary_ref: ncas:amf
+
+- check_id: check_number_of_drops_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'number_of_drops'
+  parameters:
+    dtype: float32
+    var_id: number_of_drops
+    vocabulary_ref: ncas:amf
+
+- check_id: check_equivalent_reflectivity_factor_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'equivalent_reflectivity_factor'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: equivalent_reflectivity_factor
+    vocabulary_ref: ncas:amf
+
+- check_id: check_equivalent_reflectivity_factor_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'equivalent_reflectivity_factor'
+  parameters:
+    dtype: float32
+    var_id: equivalent_reflectivity_factor
+    vocabulary_ref: ncas:amf
+
+- check_id: check_precipitation_visibility_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'precipitation_visibility'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: precipitation_visibility
+    vocabulary_ref: ncas:amf
+
+- check_id: check_precipitation_visibility_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'precipitation_visibility'
+  parameters:
+    dtype: float32
+    var_id: precipitation_visibility
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag'
+  parameters:
+    pyessv_namespace: product_precipitation_variable
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag'
+  parameters:
+    dtype: byte
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf

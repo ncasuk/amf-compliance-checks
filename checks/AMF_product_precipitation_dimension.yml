@@ -1,0 +1,23 @@
+suite_name: product_precipitation_dimension_checks:v2.0
+
+description: Check 'product precipitation dimension' in AMF files
+
+checks:
+
+- check_id: check_diameter_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'diameter'
+  parameters:
+    dim_id: diameter
+    ignore_coord_var_check: false
+    pyessv_namespace: product_precipitation_dimension
+    vocabulary_ref: ncas:amf
+
+- check_id: check_fallspeed_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'fallspeed'
+  parameters:
+    dim_id: fallspeed
+    ignore_coord_var_check: false
+    pyessv_namespace: product_precipitation_dimension
+    vocabulary_ref: ncas:amf

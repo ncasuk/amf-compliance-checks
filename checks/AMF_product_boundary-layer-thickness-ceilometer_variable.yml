@@ -1,0 +1,197 @@
+suite_name: product_boundary-layer-thickness-ceilometer_variable_checks:v2.0
+
+description: Check 'product boundary-layer-thickness-ceilometer variable' in AMF files
+
+checks:
+
+- check_id: check_atmosphere_boundary_layer_thickness_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'atmosphere_boundary_layer_thickness'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: atmosphere_boundary_layer_thickness
+    vocabulary_ref: ncas:amf
+
+- check_id: check_atmosphere_boundary_layer_thickness_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'atmosphere_boundary_layer_thickness'
+  parameters:
+    dtype: float32
+    var_id: atmosphere_boundary_layer_thickness
+    vocabulary_ref: ncas:amf
+
+- check_id: check_laser_pulse_energy_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'laser_pulse_energy'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: laser_pulse_energy
+    vocabulary_ref: ncas:amf
+
+- check_id: check_laser_pulse_energy_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'laser_pulse_energy'
+  parameters:
+    dtype: float32
+    var_id: laser_pulse_energy
+    vocabulary_ref: ncas:amf
+
+- check_id: check_laser_temperature_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'laser_temperature'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: laser_temperature
+    vocabulary_ref: ncas:amf
+
+- check_id: check_laser_temperature_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'laser_temperature'
+  parameters:
+    dtype: float32
+    var_id: laser_temperature
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sensor_zenith_angle_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'sensor_zenith_angle'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: sensor_zenith_angle
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sensor_zenith_angle_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'sensor_zenith_angle'
+  parameters:
+    dtype: float32
+    var_id: sensor_zenith_angle
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sensor_azimuth_angle_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'sensor_azimuth_angle'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: sensor_azimuth_angle
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sensor_azimuth_angle_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'sensor_azimuth_angle'
+  parameters:
+    dtype: float32
+    var_id: sensor_azimuth_angle
+    vocabulary_ref: ncas:amf
+
+- check_id: check_profile_pulses_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'profile_pulses'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: profile_pulses
+    vocabulary_ref: ncas:amf
+
+- check_id: check_profile_pulses_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'profile_pulses'
+  parameters:
+    dtype: float32
+    var_id: profile_pulses
+    vocabulary_ref: ncas:amf
+
+- check_id: check_profile_scaling_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'profile_scaling'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: profile_scaling
+    vocabulary_ref: ncas:amf
+
+- check_id: check_profile_scaling_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'profile_scaling'
+  parameters:
+    dtype: float32
+    var_id: profile_scaling
+    vocabulary_ref: ncas:amf
+
+- check_id: check_window_contamination_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'window_contamination'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: window_contamination
+    vocabulary_ref: ncas:amf
+
+- check_id: check_window_contamination_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'window_contamination'
+  parameters:
+    dtype: float32
+    var_id: window_contamination
+    vocabulary_ref: ncas:amf
+
+- check_id: check_window_transmttance_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'window_transmttance'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: window_transmttance
+    vocabulary_ref: ncas:amf
+
+- check_id: check_window_transmttance_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'window_transmttance'
+  parameters:
+    dtype: float32
+    var_id: window_transmttance
+    vocabulary_ref: ncas:amf
+
+- check_id: check_background_light_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'background_light'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: background_light
+    vocabulary_ref: ncas:amf
+
+- check_id: check_background_light_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'background_light'
+  parameters:
+    dtype: float32
+    var_id: background_light
+    vocabulary_ref: ncas:amf
+
+- check_id: check_backscatter_sum_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'backscatter_sum'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: backscatter_sum
+    vocabulary_ref: ncas:amf
+
+- check_id: check_backscatter_sum_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'backscatter_sum'
+  parameters:
+    dtype: float32
+    var_id: backscatter_sum
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag'
+  parameters:
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_variable
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag'
+  parameters:
+    dtype: byte
+    var_id: qc_flag
+    vocabulary_ref: ncas:amf

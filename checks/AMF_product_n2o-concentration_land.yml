@@ -1,0 +1,19 @@
+suite_name: product_n2o-concentration_land_checks:v2.0
+
+description: Check 'product n2o-concentration land' in AMF files
+
+checks:
+
+- __INCLUDE__: AMF_file_info.yml
+
+- __INCLUDE__: AMF_file_structure.yml
+
+- __INCLUDE__: AMF_global_attrs.yml
+
+- __INCLUDE__: AMF_product_common_dimension_land.yml
+
+- __INCLUDE__: AMF_product_common_global-attributes_land.yml
+
+- __INCLUDE__: AMF_product_common_variable_land.yml
+
+- __INCLUDE__: AMF_product_n2o-concentration_variable.yml

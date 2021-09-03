@@ -1,0 +1,23 @@
+suite_name: product_cloud-base_trajectory_checks:v2.0
+
+description: Check 'product cloud-base trajectory' in AMF files
+
+checks:
+
+- __INCLUDE__: AMF_file_info.yml
+
+- __INCLUDE__: AMF_file_structure.yml
+
+- __INCLUDE__: AMF_global_attrs.yml
+
+- __INCLUDE__: AMF_product_cloud-base_dimension.yml
+
+- __INCLUDE__: AMF_product_cloud-base_global-attributes.yml
+
+- __INCLUDE__: AMF_product_cloud-base_variable.yml
+
+- __INCLUDE__: AMF_product_common_dimension_trajectory.yml
+
+- __INCLUDE__: AMF_product_common_global-attributes_trajectory.yml
+
+- __INCLUDE__: AMF_product_common_variable_trajectory.yml

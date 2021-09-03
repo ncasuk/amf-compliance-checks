@@ -1,0 +1,47 @@
+suite_name: product_aerosol-size-distribution_global-attributes_checks:v2.0
+
+description: Check 'product aerosol-size-distribution global-attributes' in AMF files
+
+checks:
+
+- check_id: check_measurement_technique_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: measurement_technique
+    regex: .{3,}
+
+- check_id: check_dma_inner_radius_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: dma_inner_radius
+    regex: .{3,}
+
+- check_id: check_dma_outer_radius_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: dma_outer_radius
+    regex: .{3,}
+
+- check_id: check_dma_length_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: dma_length
+    regex: .{3,}
+
+- check_id: check_impactor_orifice_diameter_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: impactor_orifice_diameter
+    regex: .{3,}
+
+- check_id: check_lower_channel_cuf_off_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: lower_channel_cuf_off
+    regex: .{3,}
+
+- check_id: check_upper_channel_cut_off_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: upper_channel_cut_off
+    regex: .{3,}

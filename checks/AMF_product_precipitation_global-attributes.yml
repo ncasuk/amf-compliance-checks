@@ -1,0 +1,35 @@
+suite_name: product_precipitation_global-attributes_checks:v2.0
+
+description: Check 'product precipitation global-attributes' in AMF files
+
+checks:
+
+- check_id: check_measurement_technique_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: measurement_technique
+    regex: (optical|peizoelectric|tipping_bucket|drop_counting|weighing|collecting|droplet_impact)
+
+- check_id: check_measurement_quanta_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: measurement_quanta
+    regex: .{3,}
+
+- check_id: check_collection_area_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: collection_area
+    regex: .{3,}
+
+- check_id: check_laser_wavelength_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: laser_wavelength
+    regex: .{3,}
+
+- check_id: check_laser_sample_area_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: laser_sample_area
+    regex: .{3,}

@@ -1,0 +1,14 @@
+suite_name: product_cloud-coverage_dimension_checks:v2.0
+
+description: Check 'product cloud-coverage dimension' in AMF files
+
+checks:
+
+- check_id: check_layer_index_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'layer_index'
+  parameters:
+    dim_id: layer_index
+    ignore_coord_var_check: true
+    pyessv_namespace: product_cloud-coverage_dimension
+    vocabulary_ref: ncas:amf
