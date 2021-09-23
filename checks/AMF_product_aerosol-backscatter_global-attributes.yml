@@ -1,0 +1,47 @@
+suite_name: product_aerosol-backscatter_global-attributes_checks:v2.0
+
+description: Check 'product aerosol-backscatter global-attributes' in AMF files
+
+checks:
+
+- check_id: check_laser_wavelength_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: laser_wavelength
+    regex: .{3,}
+
+- check_id: check_nominal_laser_pulse_energy_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: nominal_laser_pulse_energy
+    regex: .{3,}
+
+- check_id: check_pulse_repetition_frequency_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: pulse_repetition_frequency
+    regex: .{3,}
+
+- check_id: check_lens_diameter_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: lens_diameter
+    regex: .{3,}
+
+- check_id: check_beam_divergence_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: beam_divergence
+    regex: .{3,}
+
+- check_id: check_pulse_length_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: pulse_length
+    regex: .{3,}
+
+- check_id: check_sampling_frequency_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: sampling_frequency
+    regex: .{3,}

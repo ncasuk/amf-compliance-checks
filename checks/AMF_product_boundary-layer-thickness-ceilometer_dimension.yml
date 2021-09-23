@@ -1,0 +1,16 @@
+suite_name: product_boundary-layer-thickness-ceilometer_dimension_checks:v2.0
+
+description: Check 'product boundary-layer-thickness-ceilometer dimension' in AMF
+
+  files
+
+checks:
+
+- check_id: check_layer_index_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'layer_index'
+  parameters:
+    dim_id: layer_index
+    ignore_coord_var_check: true
+    pyessv_namespace: product_boundary-layer-thickness-ceilometer_dimension
+    vocabulary_ref: ncas:amf

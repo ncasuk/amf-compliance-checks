@@ -1,0 +1,14 @@
+suite_name: product_particle-size-distribution_dimension_checks:v2.0
+
+description: Check 'product particle-size-distribution dimension' in AMF files
+
+checks:
+
+- check_id: check_index_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'index'
+  parameters:
+    dim_id: index
+    ignore_coord_var_check: true
+    pyessv_namespace: product_particle-size-distribution_dimension
+    vocabulary_ref: ncas:amf

@@ -1,0 +1,23 @@
+suite_name: product_particle-size-distribution_land_checks:v2.0
+
+description: Check 'product particle-size-distribution land' in AMF files
+
+checks:
+
+- __INCLUDE__: AMF_file_info.yml
+
+- __INCLUDE__: AMF_file_structure.yml
+
+- __INCLUDE__: AMF_global_attrs.yml
+
+- __INCLUDE__: AMF_product_common_dimension_land.yml
+
+- __INCLUDE__: AMF_product_common_global-attributes_land.yml
+
+- __INCLUDE__: AMF_product_common_variable_land.yml
+
+- __INCLUDE__: AMF_product_particle-size-distribution_dimension.yml
+
+- __INCLUDE__: AMF_product_particle-size-distribution_global-attributes.yml
+
+- __INCLUDE__: AMF_product_particle-size-distribution_variable.yml

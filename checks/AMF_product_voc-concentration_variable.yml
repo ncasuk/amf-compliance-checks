@@ -1,0 +1,1237 @@
+suite_name: product_voc-concentration_variable_checks:v2.0
+
+description: Check 'product voc-concentration variable' in AMF files
+
+checks:
+
+- check_id: check_mole_fraction_of_ethane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_ethane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_ethane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_ethane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_ethane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_ethane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_ethane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_ethane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_ethane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_ethane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_ethane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_ethane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_ethane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_ethane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_ethane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_ethane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_ethane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_ethane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_ethane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_ethane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_ethane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_ethane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_ethane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_ethane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_ethene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_ethene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_ethene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_ethene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_ethene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_ethene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_ethene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_ethene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_ethene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_ethene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_ethene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_ethene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_ethene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_ethene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_ethene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_ethene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_ethene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_ethene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_ethene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_ethene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_ethene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_ethene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_ethene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_ethene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_propane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_propane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_propane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_propane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_propane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_propane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_propane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_propane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_propane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_propane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_propane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_propane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_propane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_propane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_propane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_propane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_propane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_propane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_propane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_propane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_propane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_propane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_propane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_propane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_propene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_propene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_propene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_propene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_propene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_propene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_propene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_propene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_propene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_propene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_propene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_propene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_propene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_propene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_propene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_propene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_propene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_propene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_propene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_propene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_propene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_propene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_propene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_propene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_iso_butane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_iso_butane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_iso_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_iso_butane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_iso_butane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_iso_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_iso_butane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_iso_butane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_iso_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_iso_butane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_iso_butane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_iso_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_iso_butane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_iso_butane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_iso_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_iso_butane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_iso_butane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_iso_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_iso_butane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_iso_butane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_iso_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_iso_butane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_iso_butane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_iso_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_n_butane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_n_butane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_n_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_n_butane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_n_butane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_n_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_n_butane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_n_butane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_n_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_n_butane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_n_butane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_n_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_n_butane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_n_butane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_n_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_n_butane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_n_butane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_n_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_n_butane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_n_butane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_n_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_n_butane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_n_butane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_n_butane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_acetylene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_acetylene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_acetylene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_acetylene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_acetylene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_acetylene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_acetylene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_acetylene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_acetylene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_acetylene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_acetylene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_acetylene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_acetylene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_acetylene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_acetylene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_acetylene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_acetylene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_acetylene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_acetylene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_acetylene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_acetylene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_acetylene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_acetylene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_acetylene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_iso_pentane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_iso_pentane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_iso_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_iso_pentane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_iso_pentane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_iso_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_iso_pentane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_iso_pentane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_iso_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_iso_pentane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_iso_pentane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_iso_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_iso_pentane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_iso_pentane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_iso_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_iso_pentane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_iso_pentane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_iso_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_iso_pentane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_iso_pentane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_iso_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_iso_pentane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_iso_pentane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_iso_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_n_pentane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_n_pentane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_n_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_n_pentane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_n_pentane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_n_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_n_pentane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_n_pentane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_n_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_n_pentane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_n_pentane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_n_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_n_pentane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_n_pentane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_n_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_n_pentane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_n_pentane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_n_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_n_pentane_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_n_pentane_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_n_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_n_pentane_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_n_pentane_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_n_pentane_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_isoprene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_isoprene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_isoprene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_isoprene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_isoprene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_isoprene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_isoprene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_isoprene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_isoprene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_isoprene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_isoprene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_isoprene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_isoprene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_isoprene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_isoprene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_isoprene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_isoprene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_isoprene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_isoprene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_isoprene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_isoprene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_isoprene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_isoprene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_isoprene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_benzene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_benzene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_benzene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_benzene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_benzene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_benzene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_benzene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_benzene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_benzene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_benzene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_benzene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_benzene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_benzene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_benzene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_benzene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_benzene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_benzene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_benzene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_benzene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_benzene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_benzene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_benzene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_benzene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_benzene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_toluene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_toluene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_toluene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_toluene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_toluene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_toluene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_toluene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_toluene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_toluene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_toluene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_toluene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_toluene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_toluene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_toluene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_toluene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_toluene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_toluene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_toluene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_toluene_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_toluene_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_toluene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_toluene_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_toluene_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_toluene_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_acetaldehyde_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_acetaldehyde_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_acetaldehyde_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_acetaldehyde_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_acetaldehyde_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_acetaldehyde_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_acetaldehyde_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_acetaldehyde_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_acetaldehyde_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_acetaldehyde_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_acetaldehyde_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_acetaldehyde_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_acetaldehyde_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_acetaldehyde_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_acetaldehyde_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_acetaldehyde_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_acetaldehyde_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_acetaldehyde_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_acetaldehyde_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_acetaldehyde_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_acetaldehyde_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_acetaldehyde_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_acetaldehyde_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_acetaldehyde_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_methanol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_methanol_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_methanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_methanol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_methanol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_methanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_methanol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_methanol_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_methanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_methanol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_methanol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_methanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_methanol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_methanol_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_methanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_methanol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_methanol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_methanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_methanol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_methanol_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_methanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_methanol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_methanol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_methanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_acetone_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_acetone_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_acetone_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_acetone_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_acetone_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_acetone_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_acetone_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_acetone_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_acetone_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_acetone_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_acetone_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_acetone_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_acetone_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_acetone_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_acetone_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_acetone_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_acetone_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_acetone_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_acetone_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_acetone_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_acetone_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_acetone_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_acetone_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_acetone_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_dimethyl_sulfide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_dimethyl_sulfide_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_dimethyl_sulfide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_dimethyl_sulfide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_dimethyl_sulfide_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_dimethyl_sulfide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_dimethyl_sulfide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_dimethyl_sulfide_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_dimethyl_sulfide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_dimethyl_sulfide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_dimethyl_sulfide_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_dimethyl_sulfide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_dimethyl_sulfide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_dimethyl_sulfide_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_dimethyl_sulfide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_dimethyl_sulfide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_dimethyl_sulfide_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_dimethyl_sulfide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_dimethyl_sulfide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_dimethyl_sulfide_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_dimethyl_sulfide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_dimethyl_sulfide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_dimethyl_sulfide_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_dimethyl_sulfide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_ethanol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_fraction_of_ethanol_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_fraction_of_ethanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_fraction_of_ethanol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_fraction_of_ethanol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_ethanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_ethanol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_ethanol_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_fraction_of_ethanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_ethanol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_ethanol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_ethanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_ethanol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_ethanol_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mole_concentration_of_ethanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_ethanol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_ethanol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_ethanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_ethanol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_ethanol_in_air'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: mass_concentration_of_ethanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_ethanol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_ethanol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_ethanol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c2h6_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_c2h6'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: qc_flag_c2h6
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c2h6_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_c2h6'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_c2h6
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c2h4_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_c2h4'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: qc_flag_c2h4
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c2h4_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_c2h4'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_c2h4
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c3h8_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_c3h8'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: qc_flag_c3h8
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c3h8_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_c3h8'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_c3h8
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c3h6_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_c3h6'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: qc_flag_c3h6
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c3h6_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_c3h6'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_c3h6
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c4h10_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_c4h10'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: qc_flag_c4h10
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c4h10_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_c4h10'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_c4h10
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c2h2_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_c2h2'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: qc_flag_c2h2
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c2h2_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_c2h2'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_c2h2
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c5h12_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_c5h12'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: qc_flag_c5h12
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c5h12_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_c5h12'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_c5h12
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c5h8_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_c5h8'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: qc_flag_c5h8
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c5h8_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_c5h8'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_c5h8
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c6h6_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_c6h6'
+  parameters:
+    pyessv_namespace: product_voc-concentration_variable
+    var_id: qc_flag_c6h6
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_c6h6_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_c6h6'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_c6h6
+    vocabulary_ref: ncas:amf

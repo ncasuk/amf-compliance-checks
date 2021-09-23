@@ -1,0 +1,11 @@
+suite_name: product_particle-size-distribution_global-attributes_checks:v2.0
+
+description: Check 'product particle-size-distribution global-attributes' in AMF files
+
+checks:
+
+- check_id: check_measurement_technique_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: measurement_technique
+    regex: .{3,}

@@ -1,10 +1,21 @@
-checks:
-- {__INCLUDE__: AMF_file_info.yml}
-- {__INCLUDE__: AMF_file_structure.yml}
-- {__INCLUDE__: AMF_global_attrs.yml}
-- {__INCLUDE__: AMF_product_aerosol-optical-depth_dimension.yml}
-- {__INCLUDE__: AMF_product_aerosol-optical-depth_variable.yml}
-- {__INCLUDE__: AMF_product_common_dimension_air.yml}
-- {__INCLUDE__: AMF_product_common_variable_air.yml}
+suite_name: product_aerosol-optical-depth_air_checks:v2.0
+
 description: Check 'product aerosol-optical-depth air' in AMF files
-suite_name: product_aerosol-optical-depth_air_checks
+
+checks:
+
+- __INCLUDE__: AMF_file_info.yml
+
+- __INCLUDE__: AMF_file_structure.yml
+
+- __INCLUDE__: AMF_global_attrs.yml
+
+- __INCLUDE__: AMF_product_aerosol-optical-depth_dimension.yml
+
+- __INCLUDE__: AMF_product_aerosol-optical-depth_variable.yml
+
+- __INCLUDE__: AMF_product_common_dimension_air.yml
+
+- __INCLUDE__: AMF_product_common_global-attributes_air.yml
+
+- __INCLUDE__: AMF_product_common_variable_air.yml

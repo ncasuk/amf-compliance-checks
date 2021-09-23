@@ -1,0 +1,14 @@
+suite_name: product_common_dimension_trajectory_checks:v2.0
+
+description: Check 'product common dimension trajectory' in AMF files
+
+checks:
+
+- check_id: check_time_dimension_attrs
+  check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
+  comments: Checks the dimension attributes for 'time'
+  parameters:
+    dim_id: time
+    ignore_coord_var_check: false
+    pyessv_namespace: product_common_dimension_trajectory
+    vocabulary_ref: ncas:amf

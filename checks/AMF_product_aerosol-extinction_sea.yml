@@ -1,10 +1,21 @@
-checks:
-- {__INCLUDE__: AMF_file_info.yml}
-- {__INCLUDE__: AMF_file_structure.yml}
-- {__INCLUDE__: AMF_global_attrs.yml}
-- {__INCLUDE__: AMF_product_aerosol-extinction_dimension.yml}
-- {__INCLUDE__: AMF_product_aerosol-extinction_variable.yml}
-- {__INCLUDE__: AMF_product_common_dimension_sea.yml}
-- {__INCLUDE__: AMF_product_common_variable_sea.yml}
+suite_name: product_aerosol-extinction_sea_checks:v2.0
+
 description: Check 'product aerosol-extinction sea' in AMF files
-suite_name: product_aerosol-extinction_sea_checks
+
+checks:
+
+- __INCLUDE__: AMF_file_info.yml
+
+- __INCLUDE__: AMF_file_structure.yml
+
+- __INCLUDE__: AMF_global_attrs.yml
+
+- __INCLUDE__: AMF_product_aerosol-extinction_dimension.yml
+
+- __INCLUDE__: AMF_product_aerosol-extinction_variable.yml
+
+- __INCLUDE__: AMF_product_common_dimension_sea.yml
+
+- __INCLUDE__: AMF_product_common_global-attributes_sea.yml
+
+- __INCLUDE__: AMF_product_common_variable_sea.yml

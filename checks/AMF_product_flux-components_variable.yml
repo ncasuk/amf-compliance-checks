@@ -1,703 +1,1397 @@
+suite_name: product_flux-components_variable_checks:v2.0
+
+description: Check 'product flux-components variable' in AMF files
+
 checks:
+
 - check_id: check_start_of_run_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'start_of_run'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: start_of_run,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: start_of_run
+    vocabulary_ref: ncas:amf
+
 - check_id: check_start_of_run_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'start_of_run'
-  parameters: {dtype: float64, var_id: start_of_run, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float64
+    var_id: start_of_run
+    vocabulary_ref: ncas:amf
+
 - check_id: check_run_length_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'run_length'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: run_length,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: run_length
+    vocabulary_ref: ncas:amf
+
 - check_id: check_run_length_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'run_length'
-  parameters: {dtype: float32, var_id: run_length, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: run_length
+    vocabulary_ref: ncas:amf
+
 - check_id: check_number_of_samples_in_run_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'number_of_samples_in_run'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: number_of_samples_in_run,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: number_of_samples_in_run
+    vocabulary_ref: ncas:amf
+
 - check_id: check_number_of_samples_in_run_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'number_of_samples_in_run'
-  parameters: {dtype: float32, var_id: number_of_samples_in_run, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: number_of_samples_in_run
+    vocabulary_ref: ncas:amf
+
 - check_id: check_air_temperature_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'air_temperature'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: air_temperature,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: air_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_air_temperature_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'air_temperature'
-  parameters: {dtype: float32, var_id: air_temperature, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: air_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_air_pressure_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'air_pressure'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: air_pressure,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: air_pressure
+    vocabulary_ref: ncas:amf
+
 - check_id: check_air_pressure_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'air_pressure'
-  parameters: {dtype: float32, var_id: air_pressure, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: air_pressure
+    vocabulary_ref: ncas:amf
+
 - check_id: check_mole_concentration_of_carbon_dioxide_in_air_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'mole_concentration_of_carbon_dioxide_in_air'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: mole_concentration_of_carbon_dioxide_in_air,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: mole_concentration_of_carbon_dioxide_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_mole_concentration_of_carbon_dioxide_in_air_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'mole_concentration_of_carbon_dioxide_in_air'
-  parameters: {dtype: float32, var_id: mole_concentration_of_carbon_dioxide_in_air,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_carbon_dioxide_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_mole_concentration_of_water_vapor_in_air_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'mole_concentration_of_water_vapor_in_air'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: mole_concentration_of_water_vapor_in_air,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: mole_concentration_of_water_vapor_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_mole_concentration_of_water_vapor_in_air_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'mole_concentration_of_water_vapor_in_air'
-  parameters: {dtype: float32, var_id: mole_concentration_of_water_vapor_in_air, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_water_vapor_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_specific_humidity_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'specific_humidity'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: specific_humidity,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: specific_humidity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_specific_humidity_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'specific_humidity'
-  parameters: {dtype: float32, var_id: specific_humidity, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: specific_humidity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_water_vapour_partial_pressure_in_air_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'water_vapour_partial_pressure_in_air'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: water_vapour_partial_pressure_in_air,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: water_vapour_partial_pressure_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_water_vapour_partial_pressure_in_air_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'water_vapour_partial_pressure_in_air'
-  parameters: {dtype: float32, var_id: water_vapour_partial_pressure_in_air, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: water_vapour_partial_pressure_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_humidity_mixing_ratio_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'humidity_mixing_ratio'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: humidity_mixing_ratio,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: humidity_mixing_ratio
+    vocabulary_ref: ncas:amf
+
 - check_id: check_humidity_mixing_ratio_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'humidity_mixing_ratio'
-  parameters: {dtype: float32, var_id: humidity_mixing_ratio, vocabulary_ref: 'ncas:amf'}
-- check_id: check_sonic_temperature_theta_variable_attrs
+  parameters:
+    dtype: float32
+    var_id: humidity_mixing_ratio
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sonic_air_temperature_theta_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
-  comments: Checks the variable attributes for 'sonic_temperature_theta'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: sonic_temperature_theta,
-    vocabulary_ref: 'ncas:amf'}
-- check_id: check_sonic_temperature_theta_variable_type
+  comments: Checks the variable attributes for 'sonic_air_temperature_theta'
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: sonic_air_temperature_theta
+    vocabulary_ref: ncas:amf
+
+- check_id: check_sonic_air_temperature_theta_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
-  comments: Checks the type of variable 'sonic_temperature_theta'
-  parameters: {dtype: float32, var_id: sonic_temperature_theta, vocabulary_ref: 'ncas:amf'}
+  comments: Checks the type of variable 'sonic_air_temperature_theta'
+  parameters:
+    dtype: float32
+    var_id: sonic_air_temperature_theta
+    vocabulary_ref: ncas:amf
+
 - check_id: check_sonic_air_temperature_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'sonic_air_temperature'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: sonic_air_temperature,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: sonic_air_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_sonic_air_temperature_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'sonic_air_temperature'
-  parameters: {dtype: float32, var_id: sonic_air_temperature, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: sonic_air_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_eastward_wind_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'eastward_wind'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: eastward_wind,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: eastward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_eastward_wind_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'eastward_wind'
-  parameters: {dtype: float32, var_id: eastward_wind, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: eastward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_northward_wind_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'northward_wind'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: northward_wind,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: northward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_northward_wind_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'northward_wind'
-  parameters: {dtype: float32, var_id: northward_wind, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: northward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_upward_air_velocity_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'upward_air_velocity'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: upward_air_velocity,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: upward_air_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_upward_air_velocity_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'upward_air_velocity'
-  parameters: {dtype: float32, var_id: upward_air_velocity, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: upward_air_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_eastward_wind_rotated_to_run_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'eastward_wind_rotated_to_run'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: eastward_wind_rotated_to_run,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: eastward_wind_rotated_to_run
+    vocabulary_ref: ncas:amf
+
 - check_id: check_eastward_wind_rotated_to_run_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'eastward_wind_rotated_to_run'
-  parameters: {dtype: float32, var_id: eastward_wind_rotated_to_run, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: eastward_wind_rotated_to_run
+    vocabulary_ref: ncas:amf
+
 - check_id: check_northward_wind_rotated_to_run_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'northward_wind_rotated_to_run'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: northward_wind_rotated_to_run,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: northward_wind_rotated_to_run
+    vocabulary_ref: ncas:amf
+
 - check_id: check_northward_wind_rotated_to_run_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'northward_wind_rotated_to_run'
-  parameters: {dtype: float32, var_id: northward_wind_rotated_to_run, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: northward_wind_rotated_to_run
+    vocabulary_ref: ncas:amf
+
 - check_id: check_upward_air_velocity_rotated_to_run_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'upward_air_velocity_rotated_to_run'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: upward_air_velocity_rotated_to_run,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: upward_air_velocity_rotated_to_run
+    vocabulary_ref: ncas:amf
+
 - check_id: check_upward_air_velocity_rotated_to_run_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'upward_air_velocity_rotated_to_run'
-  parameters: {dtype: float32, var_id: upward_air_velocity_rotated_to_run, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: upward_air_velocity_rotated_to_run
+    vocabulary_ref: ncas:amf
+
 - check_id: check_skew_eastward_wind_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'skew_eastward_wind'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: skew_eastward_wind,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: skew_eastward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_skew_eastward_wind_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'skew_eastward_wind'
-  parameters: {dtype: float32, var_id: skew_eastward_wind, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: skew_eastward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_skew_northward_wind_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'skew_northward_wind'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: skew_northward_wind,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: skew_northward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_skew_northward_wind_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'skew_northward_wind'
-  parameters: {dtype: float32, var_id: skew_northward_wind, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: skew_northward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_skew_upward_air_velocity_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'skew_upward_air_velocity'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: skew_upward_air_velocity,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: skew_upward_air_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_skew_upward_air_velocity_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'skew_upward_air_velocity'
-  parameters: {dtype: float32, var_id: skew_upward_air_velocity, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: skew_upward_air_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_skew_sonic_air_temperature_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'skew_sonic_air_temperature'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: skew_sonic_air_temperature,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: skew_sonic_air_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_skew_sonic_air_temperature_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'skew_sonic_air_temperature'
-  parameters: {dtype: float32, var_id: skew_sonic_air_temperature, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: skew_sonic_air_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_kurtosis_eastward_wind_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'kurtosis_eastward_wind'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: kurtosis_eastward_wind,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: kurtosis_eastward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_kurtosis_eastward_wind_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'kurtosis_eastward_wind'
-  parameters: {dtype: float32, var_id: kurtosis_eastward_wind, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: kurtosis_eastward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_kurtosis_northward_wind_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'kurtosis_northward_wind'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: kurtosis_northward_wind,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: kurtosis_northward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_kurtosis_northward_wind_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'kurtosis_northward_wind'
-  parameters: {dtype: float32, var_id: kurtosis_northward_wind, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: kurtosis_northward_wind
+    vocabulary_ref: ncas:amf
+
 - check_id: check_kurtosis_upward_air_velocity_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'kurtosis_upward_air_velocity'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: kurtosis_upward_air_velocity,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: kurtosis_upward_air_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_kurtosis_upward_air_velocity_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'kurtosis_upward_air_velocity'
-  parameters: {dtype: float32, var_id: kurtosis_upward_air_velocity, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: kurtosis_upward_air_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_kurtosis_sonic_air_temperature_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'kurtosis_sonic_air_temperature'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: kurtosis_sonic_air_temperature,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: kurtosis_sonic_air_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_kurtosis_sonic_air_temperature_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'kurtosis_sonic_air_temperature'
-  parameters: {dtype: float32, var_id: kurtosis_sonic_air_temperature, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: kurtosis_sonic_air_temperature
+    vocabulary_ref: ncas:amf
+
 - check_id: check_sst_wu_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'sst_wu'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: sst_wu,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: sst_wu
+    vocabulary_ref: ncas:amf
+
 - check_id: check_sst_wu_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'sst_wu'
-  parameters: {dtype: float32, var_id: sst_wu, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: sst_wu
+    vocabulary_ref: ncas:amf
+
 - check_id: check_sst_wv_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'sst_wv'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: sst_wv,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: sst_wv
+    vocabulary_ref: ncas:amf
+
 - check_id: check_sst_wv_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'sst_wv'
-  parameters: {dtype: float32, var_id: sst_wv, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: sst_wv
+    vocabulary_ref: ncas:amf
+
 - check_id: check_sst_wts_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'sst_wts'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: sst_wts,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: sst_wts
+    vocabulary_ref: ncas:amf
+
 - check_id: check_sst_wts_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'sst_wts'
-  parameters: {dtype: float32, var_id: sst_wts, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: sst_wts
+    vocabulary_ref: ncas:amf
+
 - check_id: check_friction_velocity_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'friction_velocity'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: friction_velocity,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: friction_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_friction_velocity_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'friction_velocity'
-  parameters: {dtype: float32, var_id: friction_velocity, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: friction_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_obukhov_length_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'obukhov_length'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: obukhov_length,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: obukhov_length
+    vocabulary_ref: ncas:amf
+
 - check_id: check_obukhov_length_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'obukhov_length'
-  parameters: {dtype: float32, var_id: obukhov_length, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: obukhov_length
+    vocabulary_ref: ncas:amf
+
 - check_id: check_stability_parameter_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'stability_parameter'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: stability_parameter,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: stability_parameter
+    vocabulary_ref: ncas:amf
+
 - check_id: check_stability_parameter_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'stability_parameter'
-  parameters: {dtype: float32, var_id: stability_parameter, vocabulary_ref: 'ncas:amf'}
-- check_id: check_standard_deviation_upward_air_velocity_variable_attrs
+  parameters:
+    dtype: float32
+    var_id: stability_parameter
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_upward_air_velocity_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
-  comments: Checks the variable attributes for 'standard_deviation_upward_air_velocity'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: standard_deviation_upward_air_velocity,
-    vocabulary_ref: 'ncas:amf'}
-- check_id: check_standard_deviation_upward_air_velocity_variable_type
+  comments: Checks the variable attributes for 'divergence_of_upward_air_velocity'
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: divergence_of_upward_air_velocity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_divergence_of_upward_air_velocity_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
-  comments: Checks the type of variable 'standard_deviation_upward_air_velocity'
-  parameters: {dtype: float32, var_id: standard_deviation_upward_air_velocity, vocabulary_ref: 'ncas:amf'}
+  comments: Checks the type of variable 'divergence_of_upward_air_velocity'
+  parameters:
+    dtype: float32
+    var_id: divergence_of_upward_air_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_integral_turbulent_characteristic_upward_air_velocity_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'integral_turbulent_characteristic_upward_air_velocity'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: integral_turbulent_characteristic_upward_air_velocity,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: integral_turbulent_characteristic_upward_air_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_integral_turbulent_characteristic_upward_air_velocity_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'integral_turbulent_characteristic_upward_air_velocity'
-  parameters: {dtype: float32, var_id: integral_turbulent_characteristic_upward_air_velocity,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: integral_turbulent_characteristic_upward_air_velocity
+    vocabulary_ref: ncas:amf
+
 - check_id: check_ubar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'ubar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: ubar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: ubar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_ubar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'ubar'
-  parameters: {dtype: float32, var_id: ubar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: ubar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_vbar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'vbar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: vbar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: vbar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_vbar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'vbar'
-  parameters: {dtype: float32, var_id: vbar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: vbar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wbar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wbar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wbar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wbar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wbar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wbar'
-  parameters: {dtype: float32, var_id: wbar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wbar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_tsbar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'tsbar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: tsbar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: tsbar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_tsbar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'tsbar'
-  parameters: {dtype: float32, var_id: tsbar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: tsbar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_co2bar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'co2bar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: co2bar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: co2bar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_co2bar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'co2bar'
-  parameters: {dtype: float32, var_id: co2bar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: co2bar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_h2obar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'h2obar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: h2obar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: h2obar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_h2obar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'h2obar'
-  parameters: {dtype: float32, var_id: h2obar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: h2obar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qbar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qbar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: qbar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qbar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qbar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qbar'
-  parameters: {dtype: float32, var_id: qbar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: qbar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_thetabar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'thetabar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: thetabar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: thetabar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_thetabar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'thetabar'
-  parameters: {dtype: float32, var_id: thetabar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: thetabar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wvmmrbar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wvmmrbar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wvmmrbar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wvmmrbar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wvmmrbar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wvmmrbar'
-  parameters: {dtype: float32, var_id: wvmmrbar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wvmmrbar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_uprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'uprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: uprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: uprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_uprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'uprime'
-  parameters: {dtype: float32, var_id: uprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: uprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_vprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'vprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: vprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: vprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_vprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'vprime'
-  parameters: {dtype: float32, var_id: vprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: vprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprime'
-  parameters: {dtype: float32, var_id: wprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_tsprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'tsprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: tsprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: tsprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_tsprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'tsprime'
-  parameters: {dtype: float32, var_id: tsprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: tsprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_co2prime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'co2prime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: co2prime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: co2prime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_co2prime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'co2prime'
-  parameters: {dtype: float32, var_id: co2prime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: co2prime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_h2oprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'h2oprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: h2oprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: h2oprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_h2oprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'h2oprime'
-  parameters: {dtype: float32, var_id: h2oprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: h2oprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: qprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qprime'
-  parameters: {dtype: float32, var_id: qprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: qprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_thetaprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'thetaprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: thetaprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: thetaprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_thetaprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'thetaprime'
-  parameters: {dtype: float32, var_id: thetaprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: thetaprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wvmmrprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wvmmrprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wvmmrprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wvmmrprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wvmmrprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wvmmrprime'
-  parameters: {dtype: float32, var_id: wvmmrprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wvmmrprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeuprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimeuprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimeuprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimeuprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeuprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimeuprime'
-  parameters: {dtype: float32, var_id: wprimeuprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimeuprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimevprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimevprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimevprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimevprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimevprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimevprime'
-  parameters: {dtype: float32, var_id: wprimevprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimevprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimewprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimewprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimewprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimewprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimewprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimewprime'
-  parameters: {dtype: float32, var_id: wprimewprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimewprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_uprimeuprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'uprimeuprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: uprimeuprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: uprimeuprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_uprimeuprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'uprimeuprime'
-  parameters: {dtype: float32, var_id: uprimeuprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: uprimeuprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_vprimevprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'vprimevprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: vprimevprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: vprimevprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_vprimevprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'vprimevprime'
-  parameters: {dtype: float32, var_id: vprimevprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: vprimevprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimetsprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimetsprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimetsprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimetsprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimetsprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimetsprime'
-  parameters: {dtype: float32, var_id: wprimetsprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimetsprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeco2prime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimeco2prime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimeco2prime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimeco2prime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeco2prime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimeco2prime'
-  parameters: {dtype: float32, var_id: wprimeco2prime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimeco2prime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeh2oprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimeh2oprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimeh2oprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimeh2oprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeh2oprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimeh2oprime'
-  parameters: {dtype: float32, var_id: wprimeh2oprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimeh2oprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeqprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimeqprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimeqprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimeqprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeqprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimeqprime'
-  parameters: {dtype: float32, var_id: wprimeqprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimeqprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimethetaprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimethetaprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimethetaprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimethetaprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimethetaprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimethetaprime'
-  parameters: {dtype: float32, var_id: wprimethetaprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimethetaprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimewvmmrprime_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimewvmmrprime'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimewvmmrprime,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimewvmmrprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimewvmmrprime_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimewvmmrprime'
-  parameters: {dtype: float32, var_id: wprimewvmmrprime, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimewvmmrprime
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeuprimebar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimeuprimebar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimeuprimebar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimeuprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeuprimebar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimeuprimebar'
-  parameters: {dtype: float32, var_id: wprimeuprimebar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimeuprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimevprimebar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimevprimebar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimevprimebar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimevprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimevprimebar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimevprimebar'
-  parameters: {dtype: float32, var_id: wprimevprimebar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimevprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimewprimebar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimewprimebar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimewprimebar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimewprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimewprimebar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimewprimebar'
-  parameters: {dtype: float32, var_id: wprimewprimebar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimewprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_uprimeuprimebar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'uprimeuprimebar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: uprimeuprimebar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: uprimeuprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_uprimeuprimebar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'uprimeuprimebar'
-  parameters: {dtype: float32, var_id: uprimeuprimebar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: uprimeuprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_vprimevprimebar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'vprimevprimebar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: vprimevprimebar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: vprimevprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_vprimevprimebar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'vprimevprimebar'
-  parameters: {dtype: float32, var_id: vprimevprimebar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: vprimevprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimetsprimebar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimetsprimebar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimetsprimebar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimetsprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimetsprimebar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimetsprimebar'
-  parameters: {dtype: float32, var_id: wprimetsprimebar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimetsprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeco2primebar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimeco2primebar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimeco2primebar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimeco2primebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeco2primebar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimeco2primebar'
-  parameters: {dtype: float32, var_id: wprimeco2primebar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimeco2primebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeh2oprimebar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimeh2oprimebar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimeh2oprimebar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimeh2oprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeh2oprimebar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimeh2oprimebar'
-  parameters: {dtype: float32, var_id: wprimeh2oprimebar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimeh2oprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeqprimebar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimeqprimebar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimeqprimebar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimeqprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimeqprimebar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimeqprimebar'
-  parameters: {dtype: float32, var_id: wprimeqprimebar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimeqprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimethetaprimebar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimethetaprimebar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimethetaprimebar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimethetaprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimethetaprimebar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimethetaprimebar'
-  parameters: {dtype: float32, var_id: wprimethetaprimebar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimethetaprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimewvmmrprimebar_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'wprimewvmmrprimebar'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: wprimewvmmrprimebar,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: wprimewvmmrprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_wprimewvmmrprimebar_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'wprimewvmmrprimebar'
-  parameters: {dtype: float32, var_id: wprimewvmmrprimebar, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: wprimewvmmrprimebar
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_skew_u_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_skew_u'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: qc_flag_skew_u,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_skew_u
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_skew_u_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_skew_u'
-  parameters: {dtype: byte, var_id: qc_flag_skew_u, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: byte
+    var_id: qc_flag_skew_u
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_skew_v_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_skew_v'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: qc_flag_skew_v,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_skew_v
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_skew_v_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_skew_v'
-  parameters: {dtype: byte, var_id: qc_flag_skew_v, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: byte
+    var_id: qc_flag_skew_v
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_skew_w_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_skew_w'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: qc_flag_skew_w,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_skew_w
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_skew_w_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_skew_w'
-  parameters: {dtype: byte, var_id: qc_flag_skew_w, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: byte
+    var_id: qc_flag_skew_w
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_skew_ts_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_skew_ts'
-  parameters: {pyessv_namespace: product_flux-components_variable, var_id: qc_flag_skew_ts,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_skew_ts
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_skew_ts_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_skew_ts'
-  parameters: {dtype: byte, var_id: qc_flag_skew_ts, vocabulary_ref: 'ncas:amf'}
-description: Check 'product flux-components variable' in AMF files
-suite_name: product_flux-components_variable_checks
+  parameters:
+    dtype: byte
+    var_id: qc_flag_skew_ts
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_kurtosis_u_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_kurtosis_u'
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_kurtosis_u
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_kurtosis_u_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_kurtosis_u'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_kurtosis_u
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_kurtosis_v_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_kurtosis_v'
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_kurtosis_v
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_kurtosis_v_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_kurtosis_v'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_kurtosis_v
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_kurtosis_w_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_kurtosis_w'
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_kurtosis_w
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_kurtosis_w_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_kurtosis_w'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_kurtosis_w
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_kurtosis_ts_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_kurtosis_ts'
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_kurtosis_ts
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_kurtosis_ts_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_kurtosis_ts'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_kurtosis_ts
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_sstclass_wu_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_sstclass_wu'
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_sstclass_wu
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_sstclass_wu_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_sstclass_wu'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_sstclass_wu
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_sstclass_wv_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_sstclass_wv'
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_sstclass_wv
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_sstclass_wv_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_sstclass_wv'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_sstclass_wv
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_sstclass_wts_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_sstclass_wts'
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_sstclass_wts
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_sstclass_wts_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_sstclass_wts'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_sstclass_wts
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_quality_wu_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_quality_wu'
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_quality_wu
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_quality_wu_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_quality_wu'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_quality_wu
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_quality_wv_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_quality_wv'
+  parameters:
+    pyessv_namespace: product_flux-components_variable
+    var_id: qc_flag_quality_wv
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_quality_wv_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_quality_wv'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_quality_wv
+    vocabulary_ref: ncas:amf

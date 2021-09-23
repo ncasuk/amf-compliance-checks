@@ -1,8 +1,14 @@
+suite_name: product_brightness-temperature_dimension_checks:v2.0
+
+description: Check 'product brightness-temperature dimension' in AMF files
+
 checks:
+
 - check_id: check_radiation_frequency_dimension_attrs
   check_name: checklib.register.nc_file_checks_register.NetCDFDimensionCheck
   comments: Checks the dimension attributes for 'radiation_frequency'
-  parameters: {dim_id: radiation_frequency, ignore_coord_var_checks: false, pyessv_namespace: product_brightness-temperature_dimension,
-    vocabulary_ref: 'ncas:amf'}
-description: Check 'product brightness-temperature dimension' in AMF files
-suite_name: product_brightness-temperature_dimension_checks
+  parameters:
+    dim_id: radiation_frequency
+    ignore_coord_var_check: false
+    pyessv_namespace: product_brightness-temperature_dimension
+    vocabulary_ref: ncas:amf

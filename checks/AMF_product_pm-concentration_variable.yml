@@ -1,0 +1,293 @@
+suite_name: product_pm-concentration_variable_checks:v2.0
+
+description: Check 'product pm-concentration variable' in AMF files
+
+checks:
+
+- check_id: check_mass_concentration_of_pm1_ambient_aerosol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_pm1_ambient_aerosol_in_air'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: mass_concentration_of_pm1_ambient_aerosol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_pm1_ambient_aerosol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_pm1_ambient_aerosol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_pm1_ambient_aerosol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_pm2p5_ambient_aerosol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_pm2p5_ambient_aerosol_in_air'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: mass_concentration_of_pm2p5_ambient_aerosol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_pm2p5_ambient_aerosol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_pm2p5_ambient_aerosol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_pm2p5_ambient_aerosol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_pm4_ambient_aerosol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_pm4_ambient_aerosol_in_air'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: mass_concentration_of_pm4_ambient_aerosol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_pm4_ambient_aerosol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_pm4_ambient_aerosol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_pm4_ambient_aerosol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_pm10_ambient_aerosol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_pm10_ambient_aerosol_in_air'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: mass_concentration_of_pm10_ambient_aerosol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_pm10_ambient_aerosol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_pm10_ambient_aerosol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_pm10_ambient_aerosol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_total_pm_ambient_aerosol_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_total_pm_ambient_aerosol_in_air'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: mass_concentration_of_total_pm_ambient_aerosol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_total_pm_ambient_aerosol_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_total_pm_ambient_aerosol_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_total_pm_ambient_aerosol_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_number_concentration_of_ambient_aerosol_particles_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'number_concentration_of_ambient_aerosol_particles_in_air'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: number_concentration_of_ambient_aerosol_particles_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_number_concentration_of_ambient_aerosol_particles_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'number_concentration_of_ambient_aerosol_particles_in_air'
+  parameters:
+    dtype: float32
+    var_id: number_concentration_of_ambient_aerosol_particles_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_air_pressure_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'air_pressure'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: air_pressure
+    vocabulary_ref: ncas:amf
+
+- check_id: check_air_pressure_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'air_pressure'
+  parameters:
+    dtype: float32
+    var_id: air_pressure
+    vocabulary_ref: ncas:amf
+
+- check_id: check_air_temperature_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'air_temperature'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: air_temperature
+    vocabulary_ref: ncas:amf
+
+- check_id: check_air_temperature_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'air_temperature'
+  parameters:
+    dtype: float32
+    var_id: air_temperature
+    vocabulary_ref: ncas:amf
+
+- check_id: check_relative_humidity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'relative_humidity'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: relative_humidity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_relative_humidity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'relative_humidity'
+  parameters:
+    dtype: float32
+    var_id: relative_humidity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_pm1_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_pm1'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: qc_flag_pm1
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_pm1_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_pm1'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_pm1
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_pm2p5_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_pm2p5'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: qc_flag_pm2p5
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_pm2p5_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_pm2p5'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_pm2p5
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_pm4_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_pm4'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: qc_flag_pm4
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_pm4_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_pm4'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_pm4
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_pm10_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_pm10'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: qc_flag_pm10
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_pm10_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_pm10'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_pm10
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_total_pm_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_total_pm'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: qc_flag_total_pm
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_total_pm_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_total_pm'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_total_pm
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_total_number_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_total_number'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: qc_flag_total_number
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_total_number_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_total_number'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_total_number
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_temperature_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_temperature'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: qc_flag_temperature
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_temperature_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_temperature'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_temperature
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_relative_humidity_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_relative_humidity'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: qc_flag_relative_humidity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_relative_humidity_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_relative_humidity'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_relative_humidity
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_pressure_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'qc_flag_pressure'
+  parameters:
+    pyessv_namespace: product_pm-concentration_variable
+    var_id: qc_flag_pressure
+    vocabulary_ref: ncas:amf
+
+- check_id: check_qc_flag_pressure_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'qc_flag_pressure'
+  parameters:
+    dtype: byte
+    var_id: qc_flag_pressure
+    vocabulary_ref: ncas:amf

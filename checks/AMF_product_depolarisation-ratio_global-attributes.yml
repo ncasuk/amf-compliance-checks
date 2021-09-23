@@ -1,0 +1,95 @@
+suite_name: product_depolarisation-ratio_global-attributes_checks:v2.0
+
+description: Check 'product depolarisation-ratio global-attributes' in AMF files
+
+checks:
+
+- check_id: check_laser_wavelength_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: laser_wavelength
+    regex: .{3,}
+
+- check_id: check_laser_pulse_energy_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: laser_pulse_energy
+    regex: .{3,}
+
+- check_id: check_pulse_repetition_frequency_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: pulse_repetition_frequency
+    regex: .{3,}
+
+- check_id: check_pulses_per_ray_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: pulses_per_ray
+    regex: -?\d+
+
+- check_id: check_rays_per_point_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: rays_per_point
+    regex: -?\d+
+
+- check_id: check_lens_diameter_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: lens_diameter
+    regex: .{3,}
+
+- check_id: check_beam_divergence_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: beam_divergence
+    regex: .{3,}
+
+- check_id: check_pulse_length_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: pulse_length
+    regex: .{3,}
+
+- check_id: check_sampling_frequency_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: sampling_frequency
+    regex: .{3,}
+
+- check_id: check_focus_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: focus
+    regex: .{3,}
+
+- check_id: check_velocity_resolution_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: velocity_resolution
+    regex: .{3,}
+
+- check_id: check_number_of_gates_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: number_of_gates
+    regex: -?\d+
+
+- check_id: check_gate_length_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: gate_length
+    regex: .{3,}
+
+- check_id: check_fft_length_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: fft_length
+    regex: -?\d+
+
+- check_id: check_maximum_range_global_attribute
+  check_name: checklib.register.nc_file_checks_register.GlobalAttrRegexCheck
+  parameters:
+    attribute: maximum_range
+    regex: .{3,}

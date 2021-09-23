@@ -1,40 +1,165 @@
+suite_name: product_co-h2-concentration_variable_checks:v2.0
+
+description: Check 'product co-h2-concentration variable' in AMF files
+
 checks:
+
 - check_id: check_mole_fraction_of_carbon_monoxide_in_air_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'mole_fraction_of_carbon_monoxide_in_air'
-  parameters: {pyessv_namespace: product_co-h2-concentration_variable, var_id: mole_fraction_of_carbon_monoxide_in_air,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_co-h2-concentration_variable
+    var_id: mole_fraction_of_carbon_monoxide_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_mole_fraction_of_carbon_monoxide_in_air_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'mole_fraction_of_carbon_monoxide_in_air'
-  parameters: {dtype: float32, var_id: mole_fraction_of_carbon_monoxide_in_air, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_carbon_monoxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_carbon_monoxide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_carbon_monoxide_in_air'
+  parameters:
+    pyessv_namespace: product_co-h2-concentration_variable
+    var_id: mass_fraction_of_carbon_monoxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_carbon_monoxide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_carbon_monoxide_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_carbon_monoxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_carbon_monoxide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_carbon_monoxide_in_air'
+  parameters:
+    pyessv_namespace: product_co-h2-concentration_variable
+    var_id: mole_concentration_of_carbon_monoxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_carbon_monoxide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_carbon_monoxide_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_carbon_monoxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_carbon_monoxide_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_carbon_monoxide_in_air'
+  parameters:
+    pyessv_namespace: product_co-h2-concentration_variable
+    var_id: mass_concentration_of_carbon_monoxide_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_carbon_monoxide_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_carbon_monoxide_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_carbon_monoxide_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_mole_fraction_of_molecular_hydrogen_in_air_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'mole_fraction_of_molecular_hydrogen_in_air'
-  parameters: {pyessv_namespace: product_co-h2-concentration_variable, var_id: mole_fraction_of_molecular_hydrogen_in_air,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_co-h2-concentration_variable
+    var_id: mole_fraction_of_molecular_hydrogen_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_mole_fraction_of_molecular_hydrogen_in_air_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'mole_fraction_of_molecular_hydrogen_in_air'
-  parameters: {dtype: float32, var_id: mole_fraction_of_molecular_hydrogen_in_air,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: float32
+    var_id: mole_fraction_of_molecular_hydrogen_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_molecular_hydrogen_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_fraction_of_molecular_hydrogen_in_air'
+  parameters:
+    pyessv_namespace: product_co-h2-concentration_variable
+    var_id: mass_fraction_of_molecular_hydrogen_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_fraction_of_molecular_hydrogen_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_fraction_of_molecular_hydrogen_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_fraction_of_molecular_hydrogen_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_molecular_hydrogen_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mole_concentration_of_molecular_hydrogen_in_air'
+  parameters:
+    pyessv_namespace: product_co-h2-concentration_variable
+    var_id: mole_concentration_of_molecular_hydrogen_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mole_concentration_of_molecular_hydrogen_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mole_concentration_of_molecular_hydrogen_in_air'
+  parameters:
+    dtype: float32
+    var_id: mole_concentration_of_molecular_hydrogen_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_molecular_hydrogen_in_air_variable_attrs
+  check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
+  comments: Checks the variable attributes for 'mass_concentration_of_molecular_hydrogen_in_air'
+  parameters:
+    pyessv_namespace: product_co-h2-concentration_variable
+    var_id: mass_concentration_of_molecular_hydrogen_in_air
+    vocabulary_ref: ncas:amf
+
+- check_id: check_mass_concentration_of_molecular_hydrogen_in_air_variable_type
+  check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
+  comments: Checks the type of variable 'mass_concentration_of_molecular_hydrogen_in_air'
+  parameters:
+    dtype: float32
+    var_id: mass_concentration_of_molecular_hydrogen_in_air
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_co_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_co'
-  parameters: {pyessv_namespace: product_co-h2-concentration_variable, var_id: qc_flag_co,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_co-h2-concentration_variable
+    var_id: qc_flag_co
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_co_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_co'
-  parameters: {dtype: byte, var_id: qc_flag_co, vocabulary_ref: 'ncas:amf'}
+  parameters:
+    dtype: byte
+    var_id: qc_flag_co
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_h2_variable_attrs
   check_name: checklib.register.nc_file_checks_register.NCVariableMetadataCheck
   comments: Checks the variable attributes for 'qc_flag_h2'
-  parameters: {pyessv_namespace: product_co-h2-concentration_variable, var_id: qc_flag_h2,
-    vocabulary_ref: 'ncas:amf'}
+  parameters:
+    pyessv_namespace: product_co-h2-concentration_variable
+    var_id: qc_flag_h2
+    vocabulary_ref: ncas:amf
+
 - check_id: check_qc_flag_h2_variable_type
   check_name: checklib.register.nc_file_checks_register.VariableTypeCheck
   comments: Checks the type of variable 'qc_flag_h2'
-  parameters: {dtype: byte, var_id: qc_flag_h2, vocabulary_ref: 'ncas:amf'}
-description: Check 'product co-h2-concentration variable' in AMF files
-suite_name: product_co-h2-concentration_variable_checks
+  parameters:
+    dtype: byte
+    var_id: qc_flag_h2
+    vocabulary_ref: ncas:amf
